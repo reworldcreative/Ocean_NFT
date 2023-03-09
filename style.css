@@ -99,7 +99,7 @@ body {
 }
 
 .navigation__list {
-  margin-left: 17.42%;
+  margin-left: 18.25%;
   flex-direction: row;
 }
 .navigation__btn {
@@ -135,7 +135,7 @@ body {
 .hero__wrap {
   max-width: 100%;
   margin: 0;
-  padding: 105px 103px 0px;
+  padding: 116.5px 103px 0px;
 }
 .hero__wrap > div {
   max-width: -moz-fit-content;
@@ -195,7 +195,8 @@ body {
   margin-left: 11px;
 }
 .hero__statistic {
-  margin-top: 86.54px;
+  margin-top: 65.54px;
+  margin-bottom: 0px;
 }
 .hero__statistic .statistic__item:first-child {
   margin-right: 14.84px;
@@ -217,6 +218,7 @@ body {
   align-items: center;
   letter-spacing: 0.221092px;
   color: #ffffff;
+  margin-bottom: 0;
 }
 .hero__statistic .statistic__text {
   font-family: "Alethia Next", sans-serif;
@@ -346,7 +348,7 @@ body {
 .personal-card .person__nikname {
   font-family: "Rajdhani", sans-serif;
   font-weight: 600;
-  font-size: 15.4764px;
+  font-size: 20.1601px;
   line-height: 229%;
   display: flex;
   align-items: center;
@@ -389,7 +391,7 @@ body {
   margin-bottom: 0px;
 }
 .personal-card .time {
-  margin-bottom: 33px;
+  margin-bottom: 25.95px;
 }
 .personal-card .time__title {
   font-family: "Rajdhani", sans-serif;
@@ -487,8 +489,7 @@ body {
   list-style: none;
 }
 .top__item {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  max-width: 32%;
   margin-right: 22px;
 }
 .top__item > img {
@@ -558,6 +559,7 @@ body {
 .collections__first-col {
   max-width: -moz-fit-content;
   max-width: fit-content;
+  margin-top: 49.17px;
 }
 .collections__list {
   list-style: none;
@@ -615,7 +617,7 @@ body {
   list-style: none;
 }
 .persons__item {
-  max-width: 437.76px;
+  max-width: 32%;
   margin-right: 35px;
   padding-top: 101.7px;
   padding-bottom: 40.9px;
@@ -713,7 +715,7 @@ body {
   width: 506px;
 }
 .sellers__container {
-  margin-top: 38.69px;
+  margin-top: 55px;
 }
 .sellers__list {
   gap: 34px 2.57%;
@@ -1073,6 +1075,15 @@ body {
     transform: rotate(0);
   }
 }
+@media screen and (max-width: 1600px) {
+  .top__item {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .persons__item {
+    max-width: 437.76px;
+  }
+}
 @media screen and (max-width: 1550px) {
   .footer .last .footer__list {
     display: flex;
@@ -1424,6 +1435,9 @@ body {
   .hero__button img {
     width: 27.7px;
   }
+  .hero .personal-card {
+    right: -120px;
+  }
   .sellers__item:nth-child(n+5) {
     display: none !important;
   }
@@ -1520,6 +1534,9 @@ body {
   }
 }
 @media screen and (max-width: 500px) {
+  .hero .personal-card {
+    right: 0px;
+  }
   .navigation__list {
     margin: 10px auto;
     display: block;
@@ -1588,15 +1605,49 @@ body {
     display: none;
   }
 }
+@media screen and (max-width: 400px) {
+  .hero .partners__list {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 375px) {
+  .hero .personal-card {
+    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 0, 100% 100%, 0 100%, 0 19%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 0, 100% 100%, 0 100%, 0 19%);
+  }
+  .hero .personal-card > div:first-child {
+    margin-right: 0px;
+  }
+  .hero .personal-card__button {
+    font-size: 15px;
+    padding: 3px;
+  }
+  .hero .personal-card__profession {
+    line-height: 1;
+  }
+  .hero .personal-card .price__title {
+    line-height: 1.5;
+  }
+  .hero .personal-card .time__number {
+    line-height: 1;
+  }
+  .top__wrap {
+    margin: 50px 6% 0px 7.5%;
+  }
   .top .personal-card {
     justify-content: center !important;
   }
   .collections .collection-button {
     width: 120px;
   }
+  .persons__item {
+    max-width: 50% !important;
+  }
   .persons .slick-track {
     display: block;
+  }
+  .persons .stats__item {
+    margin-right: 10px;
   }
   .sellers__item {
     width: 316px;
@@ -1628,6 +1679,9 @@ body {
   .collections__list {
     -moz-column-count: 1;
          column-count: 1;
+  }
+  .persons .stats__list {
+    flex-wrap: wrap;
   }
   .subscribe form {
     flex-wrap: wrap;
