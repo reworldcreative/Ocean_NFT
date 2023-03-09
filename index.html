@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCEAN NFT</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js"
+        integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aldrich&family=Inter:wght@400;500;800&family=MuseoModerno&family=Orbitron:wght@700&family=Rajdhani:wght@400;500;600;700&family=Lato:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header class="container-fluid header p-0 d-flex justify-content-start">
+        <div class="header__wrap align-items-center w-100 d-flex row">
+
+            <nav class="navbar navigation navbar-expand-lg navbar-dark p-0 col">
+                <a class="logo navbar-brand align-items-end d-flex p-0 m-0 col-1" href="#">
+                    <img class="logo__image" src="./img/logo/logo.png" alt="logo">
+                    Ocean<span class="logo_accent">NFT</span>
+                </a>
+                <button class="navbar-toggler navigation__btn " type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav navigation__list col-xl p-0">
+                        <li class="nav-item navigation__item">
+                            <a class="nav-link navigation__link p-0" href="#sellers">Market</a>
+                        </li>
+                        <li class="nav-item navigation__item">
+                            <a class="nav-link navigation__link p-0" href="#top">Features</a>
+                        </li>
+                        <li class="nav-item navigation__item">
+                            <a class="nav-link navigation__link p-0" href="#subscribe">Community</a>
+                        </li>
+                        </li>
+                    </ul>
+
+                    <div class="header__icons col-1 p-0 justify-content-end">
+                        <img class="header__icon" src="./img/cart.svg" alt="cart icon">
+                        <img class="header__icon" src="./img/avatar.svg" alt="avatar icon">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero container-fluid p-0" id="hero">
+        <div class="hero__wrap container row">
+            <div class="col-xl-6 col-lg-12 p-0">
+                <h1 class="hero__title">Discover, collect, and sell <span class="accent">Timeless</span> NFTs</h1>
+                <p class="hero__text">The world’s first and largest digital marketplace for crypto collectibles and non-
+                    fungible tokens
+                    (NFTs). </p>
+                <div class="">
+                    <button class="hero__button button">Explore
+                        <!-- <i class="bi bi-arrow-right"></i> -->
+                        <img src="./img/arrow_big.png" alt="arrow">
+                    </button>
+                    <p class="accent hero__sub-text d-inline">Create NFT’s</p>
+                </div>
+
+                <ul class="hero__statistic statistic p-0">
+                    <li class="statistic__item">
+                        <p class="statistic__title">35m+</p>
+                        <p class="statistic__text">Artwork</p>
+                    </li>
+
+                    <li class="statistic__item">
+                        <p class="statistic__title">18m+</p>
+                        <p class="statistic__text">Auctions</p>
+                    </li>
+
+                    <li class="statistic__item">
+                        <p class="statistic__title">500k+</p>
+                        <p class="statistic__text">Artists</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div
+                class="hero__col-logo col-xl-6 col-lg-12 p-0 d-flex justify-content-center ordr-xl-2 order-lg-3 order-md-3 order-sm-3 order-3">
+                <div>
+                    <div>
+                        <img class="hero__image" src="./img/hero.jpg" alt="main image">
+                    </div>
+                    <div class="hero__personal-card personal-card col row">
+                        <div class="col-6 p-0">
+                            <h3 class="personal-card__profession">3D Abstract Hand</h3>
+                            <div class="person">
+                                <img class="person__avatar" src="./img/person/avatar_1.png" alt="person icon">
+                                <p class="person__nikname">@jhonartist</p>
+                                <img class="person__badge" src="./img/tick.svg" alt="tick">
+                            </div>
+
+                            <div class="price">
+                                <p class="price__title">Reserve price</p>
+                                <div class="d-flex align-items-center">
+                                    <img class="price__logo" src="./img/logo/logo_white.svg" alt="logo">
+                                    <p class="price__eth">ETH 9.31</p>
+                                    <p class="price__dollar">($29,8846)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 p-0">
+                            <div class="time">
+                                <p class="time__title">Auction Ends in</p>
+                                <ul class="time__list p-0">
+                                    <li class="time__item">
+                                        <p class="time__number m-0">18</p>
+                                        <p class="time__text m-0">Hours</p>
+                                    </li>
+                                    <li class="time__item">
+                                        <p class="time__number m-0">25</p>
+                                        <p class="time__text m-0">Mins</p>
+                                    </li>
+                                    <li class="time__item">
+                                        <p class="time__number m-0">44</p>
+                                        <p class="time__text m-0">Secs</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="personal-card__button button d-flex align-items-center">Place Bid
+                                <!-- <i class="bi bi-arrow-right"></i> -->
+                                <img src="./img/arrow_small.png" alt="arrow">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="col-12 partners p-0 container-fluid mx-0 order-xl-3 orrder-lg-2 orrder-md-2 orrder-sm-2 orrder-2">
+                <ul class="partners__list p-0 m-0 container-fluid row">
+                    <li class="partners__item">
+                        <img src="./img/partners/Binance_logo.svg" alt="Binance logo">
+                    </li>
+                    <li class="partners__item">
+                        <img src="./img/partners/Ethereum_logo.svg" alt="Ethereum logo">
+                    </li>
+                    <li class="partners__item">
+                        <img src="./img/partners/Blockchain_ logo.svg" alt="Blockchain logo">
+                    </li>
+                    <li class="partners__item">
+                        <img src="./img/partners/bitmex_logo.svg" alt="Bitmex logo">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="top container-fluid p-0" id="top">
+        <div class="top__wrap">
+            <div class="section-top d-flex justify-content-between">
+                <h2 class="section-title m-0">Top NFT’s now</h2>
+                <a class="d-xl-flex d-lg-flex d-md-none d-sm-none d-none all-link align-items-center" href="#">
+                    <p class="m-0">View all</p>
+                    <img src="./img/arrow-right.png" alt="arrow">
+                </a>
+            </div>
+
+            <div>
+                <ul class="top-slider top__list container-fluid p-0 m-0 row justify-content-between">
+                    <li class="top__item col-xl-12 p-0">
+                        <img src="./img/image_1.jpg" alt="image">
+
+
+                        <div class="personal-card col row mw-100 m-0 justify-content-between">
+                            <div class="col p-0">
+                                <h3 class="personal-card__profession">Apollo Eth #1289 NFT</h3>
+                                <div class="person">
+                                    <img class="person__avatar" src="./img/person/avatar_1.png" alt="person icon">
+                                    <p class="person__nikname">@jhonartist</p>
+                                    <img class="person__badge" src="./img/tick.svg" alt="tick">
+                                </div>
+
+                                <div class="price">
+                                    <p class="price__title">Reserve price</p>
+                                    <div class="d-flex align-items-center">
+                                        <img class="price__logo" src="./img/logo/logo_white.svg" alt="logo">
+                                        <p class="price__eth">ETH 9.31</p>
+                                        <p class="price__dollar">($29,8846)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col p-0">
+                                <div class="time">
+                                    <p class="time__title">Auction Ends in</p>
+                                    <ul class="time__list p-0 justify-content-between">
+                                        <li class="time__item">
+                                            <p class="time__number m-0">18</p>
+                                            <p class="time__text m-0">Hours</p>
+                                        </li>
+                                        <li class="time__item">
+                                            <p class="time__number m-0">25</p>
+                                            <p class="time__text m-0">Mins</p>
+                                        </li>
+                                        <li class="time__item">
+                                            <p class="time__number m-0">44</p>
+                                            <p class="time__text m-0">Secs</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="personal-card__button button d-flex align-items-center">Place Bid
+                                    <!-- <i class="bi bi-arrow-right"></i> -->
+                                    <img src="./img/arrow_small.png" alt="arrow">
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                    <li class="top__item col-xl-12 p-0">
+                        <img src="./img/image_2.jpg" alt="image">
+
+
+                        <div class="personal-card col row mw-100 m-0 justify-content-between">
+                            <div class="col p-0">
+                                <h3 class="personal-card__profession">Sassy Bull #1169 Art</h3>
+                                <div class="person">
+                                    <img class="person__avatar" src="./img/person/avatar_2.png" alt="person icon">
+                                    <p class="person__nikname">@jhonartist</p>
+                                    <img class="person__badge" src="./img/tick.svg" alt="tick">
+                                </div>
+
+                                <div class="price">
+                                    <p class="price__title">Reserve price</p>
+                                    <div class="d-flex align-items-center">
+                                        <img class="price__logo" src="./img/logo/logo_white.svg" alt="logo">
+                                        <p class="price__eth">ETH 9.31</p>
+                                        <p class="price__dollar">($29,8846)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col p-0">
+                                <div class="time">
+                                    <p class="time__title">Auction Ends in</p>
+                                    <ul class="time__list p-0 justify-content-between">
+                                        <li class="time__item">
+                                            <p class="time__number m-0">09</p>
+                                            <p class="time__text m-0">Hours</p>
+                                        </li>
+                                        <li class="time__item">
+                                            <p class="time__number m-0">15</p>
+                                            <p class="time__text m-0">Mins</p>
+                                        </li>
+                                        <li class="time__item">
+                                            <p class="time__number m-0">23</p>
+                                            <p class="time__text m-0">Secs</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="personal-card__button button d-flex align-items-center">Place Bid
+                                    <!-- <i class="bi bi-arrow-right"></i> -->
+                                    <img src="./img/arrow_small.png" alt="arrow">
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="top__item col-xl-12 p-0">
+                        <img src="./img/image_3.jpg" alt="image">
+
+
+                        <div class="personal-card col row mw-100 m-0 justify-content-between">
+                            <div class="col p-0">
+                                <h3 class="personal-card__profession">Satisfying 3D Art</h3>
+                                <div class="person">
+                                    <img class="person__avatar" src="./img/person/avatar_3.png" alt="person icon">
+                                    <p class="person__nikname">@jhonartist</p>
+                                    <img class="person__badge" src="./img/tick.svg" alt="tick">
+                                </div>
+
+                                <div class="price">
+                                    <p class="price__title">Reserve price</p>
+                                    <div class="d-flex align-items-center">
+                                        <img class="price__logo" src="./img/logo/logo_white.svg" alt="logo">
+                                        <p class="price__eth">ETH 9.31</p>
+                                        <p class="price__dollar">($29,8846)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col p-0">
+                                <div class="time">
+                                    <p class="time__title">Auction Ends in</p>
+                                    <ul class="time__list p-0 justify-content-between">
+                                        <li class="time__item">
+                                            <p class="time__number m-0">23</p>
+                                            <p class="time__text m-0">Hours</p>
+                                        </li>
+                                        <li class="time__item">
+                                            <p class="time__number m-0">32</p>
+                                            <p class="time__text m-0">Mins</p>
+                                        </li>
+                                        <li class="time__item">
+                                            <p class="time__number m-0">56</p>
+                                            <p class="time__text m-0">Secs</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="personal-card__button button d-flex align-items-center">Place Bid
+                                    <!-- <i class="bi bi-arrow-right"></i> -->
+                                    <img src="./img/arrow_small.png" alt="arrow">
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <a class="d-flex explore align-items-center d-xl-none d-lg-none d-md-block" href="#">
+                <p class="m-0">Explore</p>
+                <img src="./img/arrow-right.png" alt="arrow">
+            </a>
+        </div>
+    </section>
+
+    <section class="collections container-fluid p-0" id="collections">
+        <div class="collections__wrap row p-0 justify-content-between">
+            <div class="col-xl col-lg-12 p-0 collections__first-col">
+                <h2 class="section-title">Explore Collections</h2>
+
+                <ul class="collections__list p-0 justify-content-between">
+                    <li class="collections__item">
+                        <button class="collection-button">Photography</button>
+                    </li>
+                    <li class="collections__item">
+                        <button class="collection-button">Brands</button>
+                    </li>
+                    <li class="collections__item">
+                        <button class="collection-button collection-button_active">Art</button>
+                    </li>
+                    <li class="collections__item">
+                        <button class="collection-button">Brands</button>
+                    </li>
+
+                    <li class="collections__item">
+                        <button class="collection-button">Sports</button>
+                    </li>
+                    <li class="collections__item">
+                        <button class="collection-button">Collectibles</button>
+                    </li>
+                    <li class="collections__item">
+                        <button class="collection-button">Utility</button>
+                    </li>
+                    <li class="collections__item">
+                        <button class="collection-button">Collectibles</button>
+                    </li>
+                </ul>
+
+                <a class="all-link d-flex align-items-center justify-content-end" href="#">
+                    <p class="m-0">View all</p>
+                    <img src="./img/arrow-right.png" alt="arrow">
+                </a>
+            </div>
+
+            <div class="col-xl-4 col-lg-12 p-0 d-flex justify-content-center">
+                <img class="collections__image" src="./img/collection.png" alt="collection">
+            </div>
+        </div>
+    </section>
+
+    <section class="persons container-fluid p-0" id="persons">
+        <div class="persons__wrap">
+            <div class="section-top d-flex justify-content-between">
+                <h2 class="section-title m-0">Explore Collections</h2>
+                <a class="d-xl-flex d-lg-flex d-md-none d-sm-none d-none all-link align-items-center" href="#">
+                    <p class="m-0">View all</p>
+                    <img src="./img/arrow-right.png" alt="arrow">
+                </a>
+            </div>
+
+            <ul class="persons-slider persons__list row p-0 mx-0 justify-content-between mw-100">
+                <li class="persons__item col-12 px-0">
+                    <div class="person">
+                        <img class="person__photo" src="./img/person/photo_1.png" alt="man with hat">
+                        <h3 class="person__name m-0">Jhones Nickey</h3>
+                        <div class="d-flex justify-content-center">
+                            <p class="person__nikname m-0">@jhonartist</p>
+                            <img class="person__badge" src="./img/tick.svg" alt="tick">
+                        </div>
+                    </div>
+
+                    <div class="stats">
+                        <ul class="stats__list p-0 justify-content-around">
+                            <li class="stats__item">
+                                <p class="stats__number m-0">125</p>
+                                <p class="stats__text m-0">Folowers</p>
+                            </li>
+                            <li class="stats__item">
+                                <p class="stats__number m-0">256</p>
+                                <p class="stats__text m-0">Following</p>
+                            </li>
+                            <li class="stats__item">
+                                <p class="stats__number m-0">129</p>
+                                <p class="stats__text m-0">Artworks</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <button class="persons__button button">Follow</button>
+                    </div>
+                </li>
+
+                <li class="persons__item col-12 px-0">
+                    <div class="person">
+                        <img class="person__photo" src="./img/person/photo_2.png" alt="woman photo">
+                        <h3 class="person__name m-0">Cody Fisher</h3>
+                        <div class="d-flex justify-content-center">
+                            <p class="person__nikname m-0">@codyfishe</p>
+                            <img class="person__badge" src="./img/tick.svg" alt="tick">
+                        </div>
+                    </div>
+
+                    <div class="stats">
+                        <ul class="stats__list p-0 justify-content-around">
+                            <li class="stats__item">
+                                <p class="stats__number m-0">356</p>
+                                <p class="stats__text m-0">Folowers</p>
+                            </li>
+                            <li class="stats__item">
+                                <p class="stats__number m-0">456</p>
+                                <p class="stats__text m-0">Following</p>
+                            </li>
+                            <li class="stats__item">
+                                <p class="stats__number m-0">89</p>
+                                <p class="stats__text m-0">Artworks</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <button class="persons__button button">Follow</button>
+                    </div>
+                </li>
+
+                <li class="persons__item col-12 px-0">
+                    <div class="person">
+                        <img class="person__photo" src="./img/person/photo_3.png" alt="woman photo">
+                        <h3 class="person__name m-0">Jerome Bell</h3>
+                        <div class="d-flex justify-content-center">
+                            <p class="person__nikname m-0">@jeromebt</p>
+                            <img class="person__badge" src="./img/tick.svg" alt="tick">
+                        </div>
+                    </div>
+
+                    <div class="stats">
+                        <ul class="stats__list p-0 justify-content-around">
+                            <li class="stats__item">
+                                <p class="stats__number m-0">546</p>
+                                <p class="stats__text m-0">Folowers</p>
+                            </li>
+                            <li class="stats__item">
+                                <p class="stats__number m-0">789</p>
+                                <p class="stats__text m-0">Following</p>
+                            </li>
+                            <li class="stats__item">
+                                <p class="stats__number m-0">54</p>
+                                <p class="stats__text m-0">Artworks</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <button class="persons__button button">Follow</button>
+                    </div>
+                </li>
+
+            </ul>
+
+            <a class="d-flex explore align-items-center d-xl-none d-lg-none d-md-block" href="#">
+                <p class="m-0">Explore</p>
+                <img src="./img/arrow-right.png" alt="arrow">
+            </a>
+        </div>
+    </section>
+
+    <section class="sellers container-fluid p-0" id="sellers">
+        <div class="sellers__wrap text-center">
+            <h2 class="section-title m-0">Top Sellers this <span class="section-title_accent">Month &#8964;</span></h2>
+            <p class="sellers__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                officia consequat duis enim minim mollit.</p>
+
+            <div class="sellers__container">
+                <ul class="sellers__list p-0 m-0">
+
+                    <li class="sellers__item d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <p class="sellers__number mb-0">1</p>
+                            <img class="sellers__avatar" src="./img/person/person-avatar_1.png" alt="person avatar">
+                            <div>
+                                <p class="sellers__name m-0">Eleanor Pena</p>
+                                <div class="d-flex">
+                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                    <p class="mb-0 sellers__count">74875</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0 sellers__income sellers__income_positive">
+                            +468.48%
+                        </p>
+                    </li>
+
+                    <li class="sellers__item d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <p class="sellers__number mb-0">2</p>
+                            <img class="sellers__avatar" src="./img/person/person-avatar_2.png" alt="person avatar">
+                            <div>
+                                <p class="sellers__name m-0">Savannah Nguyen</p>
+                                <div class="d-flex">
+                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                    <p class="mb-0 sellers__count">18599</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0 sellers__income sellers__income_negative">
+                            -468.48%
+                        </p>
+                    </li>
+
+                    <li class="sellers__item d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <p class="sellers__number mb-0">3</p>
+                            <img class="sellers__avatar" src="./img/person/person-avatar_3.png" alt="person avatar">
+                            <div>
+                                <p class="sellers__name m-0">Arlene McCoy</p>
+                                <div class="d-flex">
+                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                    <p class="mb-0 sellers__count">45904</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0 sellers__income sellers__income_positive">
+                            +468.48%
+                        </p>
+                    </li>
+
+
+                    <li class="sellers__item d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <p class="sellers__number mb-0">4</p>
+                            <img class="sellers__avatar" src="./img/person/person-avatar_4.png" alt="person avatar">
+                            <div>
+                                <p class="sellers__name m-0">Esther Howard</p>
+                                <div class="d-flex">
+                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                    <p class="mb-0 sellers__count">16627</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0 sellers__income sellers__income_negative">
+                            -468.48%
+                        </p>
+                    </li>
+
+                    <li class="sellers__item d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <p class="sellers__number mb-0">5</p>
+                            <img class="sellers__avatar" src="./img/person/person-avatar_5.png" alt="person avatar">
+                            <div>
+                                <p class="sellers__name m-0">Robert Fox</p>
+                                <div class="d-flex">
+                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                    <p class="mb-0 sellers__count">9631</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0 sellers__income sellers__income_positive">
+                            +468.48%
+                        </p>
+                    </li>
+
+                    <li class="sellers__item d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <p class="sellers__number mb-0">6</p>
+                            <img class="sellers__avatar" src="./img/person/person-avatar_6.png" alt="person avatar">
+                            <div>
+                                <p class="sellers__name m-0">Darlene Robertson</p>
+                                <div class="d-flex">
+                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                    <p class="mb-0 sellers__count">70443</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0 sellers__income sellers__income_positive">
+                            -468.48%
+                        </p>
+                    </li>
+
+
+
+                    <li class="sellers__item d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <p class="sellers__number mb-0">7</p>
+                            <img class="sellers__avatar" src="./img/person/person-avatar_7.png" alt="person avatar">
+                            <div>
+                                <p class="sellers__name m-0">Jacob Jones</p>
+                                <div class="d-flex">
+                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                    <p class="mb-0 sellers__count">13671</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0 sellers__income sellers__income_positive">
+                            +468.48%
+                        </p>
+                    </li>
+
+                    <li class="sellers__item d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <p class="sellers__number mb-0">8</p>
+                            <img class="sellers__avatar" src="./img/person/person-avatar_8.png" alt="person avatar">
+                            <div>
+                                <p class="sellers__name m-0">Jerome Bell</p>
+                                <div class="d-flex">
+                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                    <p class="mb-0 sellers__count">39235</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0 sellers__income sellers__income_negative">
+                            +468.48%
+                        </p>
+                    </li>
+
+                    <li class="sellers__item d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <p class="sellers__number mb-0">9</p>
+                            <img class="sellers__avatar" src="./img/person/person-avatar_9.png" alt="person avatar">
+                            <div>
+                                <p class="sellers__name m-0">Wade Warren</p>
+                                <div class="d-flex">
+                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                    <p class="mb-0 sellers__count">43359</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0 sellers__income sellers__income_negative">
+                            +468.48%
+                        </p>
+                    </li>
+
+                    <li class="sellers__item d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <p class="sellers__number mb-0">10</p>
+                            <img class="sellers__avatar" src="./img/person/person-avatar_10.png" alt="person avatar">
+                            <div>
+                                <p class="sellers__name m-0">Jane Cooper</p>
+                                <div class="d-flex">
+                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                    <p class="mb-0 sellers__count">95554</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0 sellers__income sellers__income_negative">
+                            +468.48%
+                        </p>
+                    </li>
+
+                    <li class="sellers__item d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <p class="sellers__number mb-0">11</p>
+                            <img class="sellers__avatar" src="./img/person/person-avatar_11.png" alt="person avatar">
+                            <div>
+                                <p class="sellers__name m-0">Kristin Watson</p>
+                                <div class="d-flex">
+                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                    <p class="mb-0 sellers__count">20796</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0 sellers__income sellers__income_positive">
+                            +468.48%
+                        </p>
+                    </li>
+
+                    <li class="sellers__item d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <p class="sellers__number mb-0">12</p>
+                            <img class="sellers__avatar" src="./img/person/person-avatar_12.png" alt="person avatar">
+                            <div>
+                                <p class="sellers__name m-0">Kathryn Murphy</p>
+                                <div class="d-flex">
+                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                    <p class="mb-0 sellers__count">4339</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0 sellers__income sellers__income_negative">
+                            +468.48%
+                        </p>
+                    </li>
+                </ul>
+
+                <button class="sellers__button button">Explore
+                    all</button>
+
+                <a class="d-flex explore align-items-center d-xl-none d-lg-none d-md-block d-sm-block d-block" href="#">
+                    <p class="m-0">Explore</p>
+                    <img src="./img/arrow-right.png" alt="arrow">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about container-fluid p-0" id="about">
+        <div class="about__wrap">
+            <h2 class="section-title">What are NFT’s ?</h2>
+            <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum quis amet, faucibus
+                lorem. Lectus amet
+                odio quis sed adipiscing adipiscing magna non. Nullam turpis faucibus ridiculus suscipit. Et blandit
+                suspendisse curabitur eu congue dui ut.</p>
+
+            <div class="d-flex about-more">
+                <a href="#" class="about-more__link">Learn more</a>
+                <a href="#" class="about-more__watch"><span>&#9654;</span> Watch video</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe container-fluid p-0" id="subscribe">
+        <div class="subscribe__wrap row p-0 align-items-end">
+            <img class="col-xl col-lg-6 col-md-12 p-0 order-xl-1 order-lg-1 order-md-1 order-sm-2 order-2 subscribe__image"
+                src="./img/sub-img.jpg" alt="colorful image">
+            <div class="col p-0 order-xl-2 order-lg-2 order-md-2 order-sm-1 order-1">
+                <h2 class="section-title">Subscribe to us</h2>
+                <p class="subscribe__text">Specially developed to help restore a more youthful appearance with improved
+                    radiance and bounce.</p>
+
+                <form class="d-flex">
+                    <input type="text" class="form-control subscribe__input" placeholder="Your work email address">
+                    <button type="submit" class="subscribe__button button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer container-fluid p-0 ">
+        <div class="footer__wrap d-flex justify-content-between">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 footer__first-col p-0">
+                <a class="logo align-items-end d-flex p-0" href="#">
+                    <img class="logo__image" src="./img/logo/logo.png" alt="logo">
+                    Ocean<span class="logo_accent">NFT</span>
+                </a>
+
+                <p class="footer__text">Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl nunc quam ac sed
+                    turpis volutpat.
+                    Cursus sed massa non nisi, placerat.</p>
+
+                <ul class="socials p-0 mb-0">
+                    <li class="socials__link">
+                        <a class="d-flex" href="https://www.instagram.com" target="_blank">
+                            <img src="./img/socials/instagram.svg" alt="instagram icon">
+                        </a>
+                    </li>
+
+                    <li class="socials__link">
+                        <a class="d-flex" href="https://dribbble.com" target="_blank">
+                            <img src="./img/socials/dribbble.svg" alt="dribbble icon">
+                        </a>
+                    </li>
+
+                    <li class="socials__link">
+                        <a class="d-flex" href="https://twitter.com" target="_blank">
+                            <img src="./img/socials/twitter.svg" alt="twitter icon">
+                        </a>
+                    </li>
+
+                    <li class="socials__link">
+                        <a class="d-flex" href="https://www.youtube.com" target="_blank">
+                            <img src="./img/socials/youtube.svg" alt="youtube icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__second-col p-0 justify-content-evenly d-xl-flex d-lg-flex d-md-none d-sm-none d-none">
+                <div class="p-0">
+                    <ul class="footer__list p-0">
+                        <li class="footer__item">
+                            Market place
+                        </li>
+
+                        <li class="footer__item">
+                            Overview
+                        </li>
+                        <li class="footer__item">
+                            Features <span class="footer__badge">new</span>
+                        </li>
+                        <li class="footer__item">
+                            Tutorials
+                        </li>
+                        <li class="footer__item">
+                            Pricing
+                        </li>
+                        <li class="footer__item">
+                            Releases
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-0">
+                    <ul class="footer__list p-0">
+                        <li class="footer__item">
+                            Collectibles
+                        </li>
+
+                        <li class="footer__item">
+                            About
+                        </li>
+                        <li class="footer__item">
+                            Press
+                        </li>
+                        <li class="footer__item">
+                            Careers
+                        </li>
+                        <li class="footer__item">
+                            Contact
+                        </li>
+                        <li class="footer__item">
+                            Partners
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-0">
+                    <ul class="footer__list p-0">
+                        <li class="footer__item">
+                            Support
+                        </li>
+
+                        <li class="footer__item">
+                            Help Center
+                        </li>
+                        <li class="footer__item">
+                            Safety Center
+                        </li>
+                        <li class="footer__item">
+                            Legal
+                        </li>
+                        <li class="footer__item">
+                            Privacy policy
+                        </li>
+                        <li class="footer__item">
+                            Status
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-0">
+                    <ul class="footer__list p-0">
+                        <li class="footer__item">
+                            Legal
+                        </li>
+
+                        <li class="footer__item">
+                            Cookies Policy
+                        </li>
+                        <li class="footer__item">
+                            Privacy Policy
+                        </li>
+                        <li class="footer__item">
+                            Terms of Service
+                        </li>
+                        <li class="footer__item">
+                            Law Enforcement
+                        </li>
+                        <li class="footer__item">
+                            Status
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-0 last">
+                    <ul class="footer__list p-0">
+                        <li class="footer__item">
+                            Follow us
+                        </li>
+
+                        <li class="footer__item">
+                            <a class="d-flex" href="https://www.facebook.com" target="_blank">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="d-flex" href="https://www.facebook.com" target="_blank">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="d-flex" href="https://dribbble.com" target="_blank">
+                                Dribbble
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="d-flex" href="https://www.instagram.com" target="_blank">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="d-flex" href="https://www.linkedin.com" target="_blank">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion container-fluid p-0 d-xl-none d-lg-none d-md-block d-sm-block d-block" id="accordion">
+                <div class="card accordion__card">
+                    <div class="card-header d-flex justify-content-between" id="headingOne">
+                        <button class="accordion__title p-0 d-flex justify-content-between w-100" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <p class="mb-0">Market place</p>
+                            <span>
+                                &#8964;
+                            </span>
+                        </button>
+
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body p-0">
+                            <ul class="p-0 accordion__list">
+                                <li class="accordion__item">
+                                    Overview
+                                </li>
+                                <li class="accordion__item">
+                                    Features <span class="footer__badge">new</span>
+                                </li>
+                                <li class="accordion__item">
+                                    Tutorials
+                                </li>
+                                <li class="accordion__item">
+                                    Pricing
+                                </li>
+                                <li class="accordion__item">
+                                    Releases
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card accordion__card">
+                    <div class="card-header" id="headingTwo">
+                        <button class="accordion__title p-0 d-flex justify-content-between w-100" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <p class="mb-0">Collectibles</p>
+                            <span>
+                                &#8964;
+                            </span>
+                        </button>
+
+                    </div>
+
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body p-0">
+                            <ul class="p-0 accordion__list">
+                                <li class="accordion__item">
+                                    About
+                                </li>
+                                <li class="accordion__item">
+                                    Press
+                                </li>
+                                <li class="accordion__item">
+                                    Press
+                                </li>
+                                <li class="accordion__item">
+                                    Contact
+                                </li>
+
+                                <li class="accordion__item">
+                                    Partners
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card accordion__card">
+                    <div class="card-header" id="headingThree">
+                        <button class="accordion__title p-0 d-flex justify-content-between w-100" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            <p class="mb-0">Support</p>
+                            <span>
+                                &#8964;
+                            </span>
+                        </button>
+
+                    </div>
+
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body p-0">
+                            <ul class="p-0 accordion__list">
+                                <li class="accordion__item">
+                                    Help Center
+                                </li>
+                                <li class="accordion__item">
+                                    Safety Center
+                                </li>
+                                <li class="accordion__item">
+                                    Legal
+                                </li>
+                                <li class="accordion__item">
+                                    Privacy policy
+                                </li>
+
+                                <li class="accordion__item">
+                                    Status
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card accordion__card">
+                    <div class="card-header" id="headingFour">
+                        <button class="accordion__title p-0 d-flex justify-content-between w-100" data-toggle="collapse"
+                            data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            <p class="mb-0">Legal</p>
+                            <span>
+                                &#8964;
+                            </span>
+                        </button>
+
+                    </div>
+
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body p-0">
+                            <ul class="p-0 accordion__list">
+                                <li class="accordion__item">
+                                    Cookies Policy
+                                </li>
+                                <li class="accordion__item">
+                                    Privacy Policy
+                                </li>
+                                <li class="accordion__item">
+                                    Terms of Service
+                                </li>
+                                <li class="accordion__item">
+                                    Law Enforcement
+                                </li>
+
+                                <li class="accordion__item">
+                                    Status
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card accordion__card">
+                    <div class="card-header" id="headingFive">
+                        <button class="accordion__title p-0 d-flex justify-content-between w-100" data-toggle="collapse"
+                            data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            <p class="mb-0">Follow us</p>
+                            <span>
+                                &#8964;
+                            </span>
+                        </button>
+
+                    </div>
+
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body p-0">
+                            <ul class="p-0 accordion__list">
+                                <li class="accordion__item">
+                                    <a class="d-flex p-0" href="https://www.facebook.com" target="_blank">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="accordion__item">
+                                    <a class="d-flex p-0" href="https://www.facebook.com" target="_blank">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="accordion__item">
+                                    <a class="d-flex p-0" href="https://dribbble.com" target="_blank">
+                                        Dribbble
+                                    </a>
+                                </li>
+                                <li class="accordion__item">
+                                    <a class="d-flex p-0" href="https://www.instagram.com" target="_blank">
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li class="accordion__item">
+                                    <a class="d-flex p-0" href="https://www.linkedin.com" target="_blank">
+                                        LinkedIn
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__wrap footer__second d-flex justify-content-between">
+            <p class="mb-0 p-0 col order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2">© 2020 Landify UI Kit. All
+                rights
+                reserved</p>
+            <ul
+                class="footer__list-second d-flex p-0 m-0 col-xl col-lg col-md-12 order-xl-2 order-lg-2 order-md-1 order-sm-1 order-1">
+                <li class="footer__item-second">Terms & Conditions</li>
+                <li class="footer__item-second">Privacy Policy</li>
+                <li class="footer__item-second">Sitemap</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

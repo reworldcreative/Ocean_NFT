@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Alethia Next';
+    src: url('/fonts/AlethiaNext-Light.eot');
+    src: url('/fonts/AlethiaNext-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/AlethiaNext-Light.woff2') format('woff2'),
+        url('/fonts/AlethiaNext-Light.woff') format('woff'),
+        url('/fonts/AlethiaNext-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    /* font-display: swap; */
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('/fonts/Spartan-SemiBold.eot');
+    src: url('/fonts/Spartan-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Spartan-SemiBold.woff2') format('woff2'),
+        url('/fonts/Spartan-SemiBold.woff') format('woff'),
+        url('/fonts/Spartan-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    /* font-display: swap; */
+}

@@ -1,0 +1,20 @@
+font-family: 'Aldrich',
+sans-serif;
+font-family: 'Inter',
+sans-serif;
+font-family: 'MuseoModerno',
+cursive;
+font-family: 'Orbitron',
+sans-serif;
+font-family: 'Rajdhani',
+sans-serif;
+font-family: 'Roboto',
+sans-serif;
+font-family: 'Alethia Next',
+sans-serif;
+font-family: 'Spartan',
+sans-serif;
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Inter:wght@400;500;800&family=MuseoModerno&family=Orbitron:wght@700&family=Rajdhani:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+</style>
