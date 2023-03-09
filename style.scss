@@ -1528,6 +1528,12 @@ body {
       max-width: 688px;
     }
   }
+
+  .hero {
+    .personal-card {
+      right: -150px;
+    }
+  }
 }
 
 @media screen and (max-width: 1406px) {
