@@ -61,6 +61,7 @@ body {
   background-size: cover;
   color: $main-color;
   font-style: normal;
+  // overflow: hidden;
 }
 
 .header {
@@ -807,7 +808,7 @@ body {
       )
       1;
 
-    &_active,
+    &.active,
     &:hover,
     &:focus {
       color: #ffffff;

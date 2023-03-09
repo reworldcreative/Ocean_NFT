@@ -362,33 +362,46 @@
     <section class="collections container-fluid p-0" id="collections">
         <div class="collections__wrap row p-0 justify-content-between">
             <div class="col-xl col-lg-12 p-0 collections__first-col">
+
                 <h2 class="section-title">Explore Collections</h2>
 
-                <ul class="collections__list p-0 justify-content-between">
-                    <li class="collections__item">
-                        <button class="collection-button">Photography</button>
+                <ul class="collections__list p-0 justify-content-between" id="myTab" role="tablist">
+                    <li class="collections__item" role="presentation">
+                        <button class="collection-button active" id="Photography-tab" data-bs-toggle="tab"
+                            data-bs-target="#Photography" type="button" role="tab" aria-controls="Photography"
+                            aria-selected="true">Photography</button>
                     </li>
-                    <li class="collections__item">
-                        <button class="collection-button">Brands</button>
+                    <li class="collections__item" role="presentation">
+                        <button class="collection-button" id="Brands-tab" data-bs-toggle="tab" data-bs-target="#Brands"
+                            type="button" role="tab" aria-controls="Brands" aria-selected="false">Brands</button>
                     </li>
-                    <li class="collections__item">
-                        <button class="collection-button collection-button_active">Art</button>
+                    <li class="collections__item" role="presentation">
+                        <button class="collection-button" id="Art-tab" data-bs-toggle="tab" data-bs-target="#Art"
+                            type="button" role="tab" aria-controls="Art" aria-selected="false">Art</button>
                     </li>
-                    <li class="collections__item">
-                        <button class="collection-button">Brands</button>
+                    <li class="collections__item" role="presentation">
+                        <button class="collection-button" id="Brands-tab" data-bs-toggle="tab" data-bs-target="#Brands"
+                            type="button" role="tab" aria-controls="Brands" aria-selected="false">Brands</button>
                     </li>
 
-                    <li class="collections__item">
-                        <button class="collection-button">Sports</button>
+                    <li class="collections__item" role="presentation">
+                        <button class="collection-button" id="Sports-tab" data-bs-toggle="tab" data-bs-target="#Sports"
+                            type="button" role="tab" aria-controls="Sports" aria-selected="false">Sports</button>
                     </li>
-                    <li class="collections__item">
-                        <button class="collection-button">Collectibles</button>
+                    <li class="collections__item" role="presentation">
+                        <button class="collection-button" id="Collectibles-tab" data-bs-toggle="tab"
+                            data-bs-target="#Collectibles" type="button" role="tab" aria-controls="Collectibles"
+                            aria-selected="false">Collectibles</button>
                     </li>
-                    <li class="collections__item">
-                        <button class="collection-button">Utility</button>
+                    <li class="collections__item" role="presentation">
+                        <button class="collection-button" id="Utility-tab" data-bs-toggle="tab"
+                            data-bs-target="#Utility" type="button" role="tab" aria-controls="Utility"
+                            aria-selected="false">Utility</button>
                     </li>
-                    <li class="collections__item">
-                        <button class="collection-button">Collectibles</button>
+                    <li class="collections__item" role="presentation">
+                        <button class="collection-button" id="Collectibles-tab" data-bs-toggle="tab"
+                            data-bs-target="#Collectibles" type="button" role="tab" aria-controls="Collectibles"
+                            aria-selected="false">Collectibles</button>
                     </li>
                 </ul>
 
@@ -398,9 +411,29 @@
                 </a>
             </div>
 
-            <div class="col-xl-4 col-lg-12 p-0 d-flex justify-content-center">
-                <img class="collections__image" src="./img/collection.png" alt="collection">
+            <div class="col-xl-4 col-lg-12 p-0 d-flex justify-content-center tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="Photography" role="tabpanel"
+                    aria-labelledby="Photography-tab">
+                    <img class="collections__image" src="./img/collection/collection3.webp" alt="collection">
+                </div>
+                <div class="tab-pane fade" id="Brands" role="tabpanel" aria-labelledby="Brands-tab">
+                    <img class="collections__image" src="./img/collection/collection2.webp" alt="collection">
+                </div>
+                <div class="tab-pane fade" id="Art" role="tabpanel" aria-labelledby="Art-tab">
+                    <img class="collections__image" src="./img/collection/collection.webp" alt="collection">
+                </div>
+                <div class="tab-pane fade" id="Sports" role="tabpanel" aria-labelledby="Sports-tab">
+                    <img class="collections__image" src="./img/collection/collection4.webp" alt="collection">
+                </div>
+                <div class="tab-pane fade" id="Collectibles" role="tabpanel" aria-labelledby="Collectibles-tab">
+                    <img class="collections__image" src="./img/collection/collection5.webp" alt="collection">
+                </div>
+                <div class="tab-pane fade" id="Utility" role="tabpanel" aria-labelledby="Utility-tab">
+                    <img class="collections__image" src="./img/collection/collection6.webp" alt="collection">
+                </div>
+                <!-- <img class="collections__image" src="./img/collection/collection.webp" alt="collection"> -->
             </div>
+
         </div>
     </section>
 
