@@ -1196,6 +1196,9 @@ body {
   }
 }
 @media screen and (max-width: 1406px) {
+  .footer__wrap {
+    margin: 0px 5%;
+  }
   .footer .last .footer__list {
     display: block;
   }

@@ -1666,6 +1666,10 @@ body {
 
 @media screen and (max-width: 1406px) {
   .footer {
+    &__wrap {
+      margin: 0px 5%;
+    }
+
     .last {
       .footer__list {
         display: block;
