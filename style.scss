@@ -825,6 +825,10 @@ body {
     margin-top: 49.17px;
   }
 
+  .tab-content {
+    height: 690px;
+  }
+
   &__list {
     list-style: none;
     -moz-column-count: 2; /* Firefox */
@@ -1186,7 +1190,7 @@ body {
   height: 556.37px;
   position: relative;
 
-  overflow: hidden;
+  // overflow: hidden;
 
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -1597,6 +1601,13 @@ body {
     }
   }
 }
+@media screen and (max-width: 1520px) {
+  .subscribe {
+    &__image {
+      margin-right: 60px;
+    }
+  }
+}
 
 @media screen and (max-width: 1500px) {
   .collections {
@@ -1662,6 +1673,14 @@ body {
       .footer__item {
         margin-right: 0px;
       }
+    }
+
+    &__second-col {
+      display: none !important;
+    }
+
+    .accordion {
+      display: block !important;
     }
   }
 
@@ -2220,6 +2239,9 @@ body {
   }
 
   .collections {
+    .tab-content {
+      height: 350px;
+    }
     &__wrap {
       margin: 108.21px 25px 0px;
     }
