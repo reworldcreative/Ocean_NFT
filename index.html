@@ -163,10 +163,12 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button class="personal-card__button button d-flex align-items-center">Place Bid
-                                <!-- <i class="bi bi-arrow-right"></i> -->
-                                <img src="./img/arrow_small.png" alt="arrow">
-                            </button>
+                            <div class="personal-card__button_wrap  d-flex align-items-center">
+                                <button class="personal-card__button button d-flex align-items-center">Place Bid
+                                    <!-- <i class="bi bi-arrow-right"></i> -->
+                                    <img src="./img/arrow_small.png" alt="arrow">
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -244,10 +246,12 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <button class="personal-card__button button d-flex align-items-center">Place Bid
-                                    <!-- <i class="bi bi-arrow-right"></i> -->
-                                    <img src="./img/arrow_small.png" alt="arrow">
-                                </button>
+                                <div class="personal-card__button_wrap d-flex align-items-center">
+                                    <button class="personal-card__button button d-flex align-items-center">Place Bid
+                                        <!-- <i class="bi bi-arrow-right"></i> -->
+                                        <img src="./img/arrow_small.png" alt="arrow">
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
@@ -294,10 +298,12 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <button class="personal-card__button button d-flex align-items-center">Place Bid
-                                    <!-- <i class="bi bi-arrow-right"></i> -->
-                                    <img src="./img/arrow_small.png" alt="arrow">
-                                </button>
+                                <div class="personal-card__button_wrap d-flex align-items-center">
+                                    <button class="personal-card__button button d-flex align-items-center">Place Bid
+                                        <!-- <i class="bi bi-arrow-right"></i> -->
+                                        <img src="./img/arrow_small.png" alt="arrow">
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -342,10 +348,13 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <button class="personal-card__button button d-flex align-items-center">Place Bid
-                                    <!-- <i class="bi bi-arrow-right"></i> -->
-                                    <img src="./img/arrow_small.png" alt="arrow">
-                                </button>
+                                <div class="personal-card__button_wrap d-flex align-items-center">
+                                    <button class="personal-card__button button d-flex align-items-center">Place Bid
+                                        <!-- <i class="bi bi-arrow-right"></i> -->
+                                        <img src="./img/arrow_small.png" alt="arrow">
+                                    </button>
+                                </div>
+
                             </div>
                         </div>
                     </li>
@@ -354,10 +363,12 @@
             </div>
 
 
-            <a class="d-flex explore align-items-center d-xl-none d-lg-none d-md-block" href="#">
-                <p class="m-0">Explore</p>
-                <img src="./img/arrow-right.png" alt="arrow">
-            </a>
+            <div class="explore_wrap d-flex align-items-center d-xl-none d-lg-none d-md-block">
+                <a class="d-flex explore align-items-center d-xl-none d-lg-none d-md-block" href="#">
+                    <p class="m-0">Explore</p>
+                    <img src="./img/arrow-right.png" alt="arrow">
+                </a>
+            </div>
         </div>
     </section>
 
@@ -478,7 +489,9 @@
                     </div>
 
                     <div class="d-flex justify-content-center">
-                        <button class="persons__button button">Follow</button>
+                        <div class="persons__button_wrap">
+                            <button class="persons__button button">Follow</button>
+                        </div>
                     </div>
                 </li>
 
@@ -510,7 +523,9 @@
                     </div>
 
                     <div class="d-flex justify-content-center">
-                        <button class="persons__button button">Follow</button>
+                        <div class="persons__button_wrap">
+                            <button class="persons__button button">Follow</button>
+                        </div>
                     </div>
                 </li>
 
@@ -542,23 +557,33 @@
                     </div>
 
                     <div class="d-flex justify-content-center">
-                        <button class="persons__button button">Follow</button>
+                        <div class="persons__button_wrap">
+                            <button class="persons__button button">Follow</button>
+                        </div>
                     </div>
                 </li>
 
             </ul>
 
-            <a class="d-flex explore align-items-center d-xl-none d-lg-none d-md-block" href="#">
-                <p class="m-0">Explore</p>
-                <img src="./img/arrow-right.png" alt="arrow">
-            </a>
+            <div class="explore_wrap d-flex align-items-center d-xl-none d-lg-none d-md-block">
+                <a class="d-flex explore align-items-center d-xl-none d-lg-none d-md-block" href="#">
+                    <p class="m-0">Explore</p>
+                    <img src="./img/arrow-right.png" alt="arrow">
+                </a>
+            </div>
         </div>
     </section>
 
     <section class="sellers container-fluid p-0" id="sellers">
         <div class="sellers__wrap text-center">
-            <h2 class="section-title m-0">Top Sellers this <span class="section-title_accent">Month<img
-                        src="./img/down-arrow.svg" alt="down arrow"></span></h2>
+            <h2 class="section-title m-0">Top Sellers this <span class="section-title_accent">
+                    Month
+                    <svg width="9" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.9999 1.32738C15.0005 1.49815 14.9651 1.66688 14.8965 1.82117C14.828 1.97546 14.7278 2.11139 14.6035 2.21897L8.17557 7.73997C7.98387 7.90809 7.74342 8 7.49528 8C7.24713 8 7.00668 7.90809 6.81498 7.73997L0.387019 2.02465C0.168236 1.83063 0.0306517 1.55183 0.00453305 1.24957C-0.0215856 0.947314 0.065901 0.646367 0.247747 0.412934C0.429592 0.179502 0.690901 0.0327053 0.974188 0.00483747C1.25748 -0.0230303 1.53954 0.0703143 1.75832 0.264336L7.50063 5.37383L13.2429 0.435796C13.4002 0.296018 13.5917 0.207228 13.7948 0.179932C13.9978 0.152637 14.204 0.187977 14.3888 0.281771C14.5736 0.375567 14.7294 0.52389 14.8377 0.709193C14.946 0.894495 15.0023 1.10902 14.9999 1.32738Z"
+                            fill="white" fill-opacity="0.54" />
+                    </svg>
+            </h2>
             <p class="sellers__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
                 officia consequat duis enim minim mollit.</p>
 
@@ -776,10 +801,13 @@
                 <button class="sellers__button button">Explore
                     all</button>
 
-                <a class="d-flex explore align-items-center d-xl-none d-lg-none d-md-block d-sm-block d-block" href="#">
-                    <p class="m-0">Explore</p>
-                    <img src="./img/arrow-right.png" alt="arrow">
-                </a>
+                <div class="explore_wrap d-flex align-items-center d-xl-none d-lg-none d-md-block">
+                    <a class="d-flex explore align-items-center d-xl-none d-lg-none d-md-block d-sm-block d-block"
+                        href="#">
+                        <p class="m-0">Explore</p>
+                        <img src="./img/arrow-right.png" alt="arrow">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
