@@ -1745,62 +1745,6 @@ body {
         // margin: 0px;
       }
 
-      &__profession {
-        width: auto;
-        font-size: 13.6006px;
-        // line-height: 1.985;
-      }
-
-      .person {
-        &__nikname {
-          font-size: 11.9006px;
-          // line-height: 2.27;
-        }
-      }
-
-      .price {
-        margin-top: 6px;
-
-        &__title {
-          font-size: 8.5004px;
-          // line-height: 3.176;
-        }
-
-        &__logo {
-          margin-right: 1px;
-        }
-
-        &__eth {
-          font-size: 7.47244px;
-          line-height: 1.2;
-        }
-
-        &__dollar {
-          font-size: 8.5004px;
-          line-height: 3.176;
-        }
-      }
-
-      .time {
-        margin-bottom: 18px;
-        &__title {
-          font-size: 8.5004px;
-          line-height: 3.176;
-        }
-
-        &__number {
-          font-size: 13.6006px;
-          // line-height: 1.98;
-          line-height: 1.5;
-        }
-
-        &__text {
-          font-size: 8.5004px;
-          // line-height: 3.176;
-          line-height: 2;
-        }
-      }
-
       &__button {
         padding: 7px 8px;
         font-size: 13.6006px;
@@ -1890,6 +1834,66 @@ body {
 }
 
 @media screen and (max-width: 991px) {
+  .top {
+    .personal-card {
+      &__profession {
+        width: auto;
+        font-size: 13.6006px;
+        // line-height: 1.985;
+      }
+
+      .person {
+        &__nikname {
+          font-size: 11.9006px;
+          // line-height: 2.27;
+        }
+      }
+
+      .price {
+        margin-top: 6px;
+
+        &__title {
+          font-size: 8.5004px;
+          // line-height: 3.176;
+        }
+
+        &__logo {
+          margin-right: 1px;
+        }
+
+        &__eth {
+          font-size: 7.47244px;
+          line-height: 1.2;
+        }
+
+        &__dollar {
+          font-size: 8.5004px;
+          line-height: 3.176;
+        }
+      }
+
+      .time {
+        margin-bottom: 18px;
+        &__title {
+          font-size: 8.5004px;
+          line-height: 3.176;
+        }
+
+        &__number {
+          font-size: 13.6006px;
+          // line-height: 1.98;
+          line-height: 1.5;
+        }
+
+        &__text {
+          font-size: 8.5004px;
+          // line-height: 3.176;
+          line-height: 2;
+        }
+      }
+    }
+  }
+
   .navigation {
     &__list {
       margin: 10px auto;
@@ -2549,6 +2553,32 @@ body {
       }
       &__number {
         font-size: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hero {
+    &__button {
+      padding: 9px 15px 11px;
+      img {
+        width: 17px;
+        margin-left: 5px;
+      }
+    }
+
+    &__personal-card {
+      max-width: 100%;
+      display: grid;
+      justify-content: center;
+    }
+    .partners {
+      &__list {
+        gap: 20px;
+      }
+      img {
+        width: 100%;
       }
     }
   }

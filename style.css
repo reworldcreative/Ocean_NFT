@@ -1247,45 +1247,6 @@ body {
   .top .personal-card {
     padding: 24.87px 19px 18px 17px;
   }
-  .top .personal-card__profession {
-    width: auto;
-    font-size: 13.6006px;
-  }
-  .top .personal-card .person__nikname {
-    font-size: 11.9006px;
-  }
-  .top .personal-card .price {
-    margin-top: 6px;
-  }
-  .top .personal-card .price__title {
-    font-size: 8.5004px;
-  }
-  .top .personal-card .price__logo {
-    margin-right: 1px;
-  }
-  .top .personal-card .price__eth {
-    font-size: 7.47244px;
-    line-height: 1.2;
-  }
-  .top .personal-card .price__dollar {
-    font-size: 8.5004px;
-    line-height: 3.176;
-  }
-  .top .personal-card .time {
-    margin-bottom: 18px;
-  }
-  .top .personal-card .time__title {
-    font-size: 8.5004px;
-    line-height: 3.176;
-  }
-  .top .personal-card .time__number {
-    font-size: 13.6006px;
-    line-height: 1.5;
-  }
-  .top .personal-card .time__text {
-    font-size: 8.5004px;
-    line-height: 2;
-  }
   .top .personal-card__button {
     padding: 7px 8px;
     font-size: 13.6006px;
@@ -1352,6 +1313,45 @@ body {
   }
 }
 @media screen and (max-width: 991px) {
+  .top .personal-card__profession {
+    width: auto;
+    font-size: 13.6006px;
+  }
+  .top .personal-card .person__nikname {
+    font-size: 11.9006px;
+  }
+  .top .personal-card .price {
+    margin-top: 6px;
+  }
+  .top .personal-card .price__title {
+    font-size: 8.5004px;
+  }
+  .top .personal-card .price__logo {
+    margin-right: 1px;
+  }
+  .top .personal-card .price__eth {
+    font-size: 7.47244px;
+    line-height: 1.2;
+  }
+  .top .personal-card .price__dollar {
+    font-size: 8.5004px;
+    line-height: 3.176;
+  }
+  .top .personal-card .time {
+    margin-bottom: 18px;
+  }
+  .top .personal-card .time__title {
+    font-size: 8.5004px;
+    line-height: 3.176;
+  }
+  .top .personal-card .time__number {
+    font-size: 13.6006px;
+    line-height: 1.5;
+  }
+  .top .personal-card .time__text {
+    font-size: 8.5004px;
+    line-height: 2;
+  }
   .navigation__list {
     margin: 10px auto;
   }
@@ -1786,6 +1786,26 @@ body {
   }
   .persons .stats__number {
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .hero__button {
+    padding: 9px 15px 11px;
+  }
+  .hero__button img {
+    width: 17px;
+    margin-left: 5px;
+  }
+  .hero__personal-card {
+    max-width: 100%;
+    display: grid;
+    justify-content: center;
+  }
+  .hero .partners__list {
+    gap: 20px;
+  }
+  .hero .partners img {
+    width: 100%;
   }
 }
 @media screen and (max-width: 300px) {
