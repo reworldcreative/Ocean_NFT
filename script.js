@@ -5,14 +5,14 @@ $(document).ready(function () {
     infinite: true,
     responsive: [
       {
-        breakpoint: 1580,
+        breakpoint: 1590,
         settings: {
           slidesToShow: 2,
         },
       },
 
       {
-        breakpoint: 710,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
         },
@@ -33,7 +33,7 @@ $(document).ready(function () {
       },
 
       {
-        breakpoint: 710,
+        breakpoint: 830,
         settings: {
           slidesToShow: 1,
         },

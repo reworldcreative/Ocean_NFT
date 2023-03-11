@@ -501,6 +501,9 @@ body {
   justify-content: space-between;
   display: flex;
 }
+.top .slick-list {
+  padding: 0 0% 0 0 !important;
+}
 .top__wrap {
   margin: 197.52px 6% 0px 7.5%;
 }
@@ -638,6 +641,9 @@ body {
   justify-content: space-between;
   display: flex;
 }
+.persons .slick-list {
+  padding: 0 0% 0 0 !important;
+}
 .persons__wrap {
   margin: 160px 6.657% 0px 6.84%;
 }
@@ -740,6 +746,7 @@ body {
 }
 .sellers .section-title_accent {
   color: #ff56f6;
+  text-decoration: none;
 }
 .sellers .section-title_accent svg {
   margin-left: 4px;
@@ -1011,6 +1018,9 @@ body {
   width: -moz-fit-content;
   width: fit-content;
 }
+.footer__item {
+  cursor: pointer;
+}
 .footer__item:first-child {
   font-weight: 500;
   font-size: 19.8983px;
@@ -1061,6 +1071,7 @@ body {
 }
 .footer__second .footer__item-second {
   padding: 0px 8px;
+  cursor: pointer;
 }
 .footer__second .footer__item-second:first-child {
   padding-left: 0px;
@@ -1103,6 +1114,7 @@ body {
   list-style: none;
 }
 .accordion__item, .accordion__item a {
+  cursor: pointer;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -1136,6 +1148,14 @@ body {
   }
   .persons__item {
     max-width: 437.76px;
+  }
+}
+@media screen and (max-width: 1590px) {
+  .top .slick-list {
+    padding: 0 20% 0 0 !important;
+  }
+  .persons .slick-list {
+    padding: 0 20% 0 0 !important;
   }
 }
 @media screen and (max-width: 1550px) {
@@ -1225,6 +1245,14 @@ body {
   .sellers__item {
     width: 45%;
   }
+  .persons .slick-list {
+    padding: 0 10% 0 0 !important;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .top .slick-list {
+    padding: 0 10% 0 0 !important;
+  }
 }
 @media screen and (max-width: 1199px) {
   .hero__wrap {
@@ -1312,6 +1340,11 @@ body {
     margin-bottom: 32.8px;
   }
 }
+@media screen and (max-width: 1028px) {
+  .top .personal-card > div:first-child {
+    margin-right: 10px;
+  }
+}
 @media screen and (max-width: 991px) {
   .top .personal-card__profession {
     width: auto;
@@ -1364,6 +1397,11 @@ body {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 830px) {
+  .persons .slick-list {
+    padding: 0 35% 0 0 !important;
+  }
+}
 @media screen and (max-width: 800px) {
   .header__wrap {
     margin: 42px 7.5% 0px 6.2%;
@@ -1382,6 +1420,15 @@ body {
   }
   .hero .partners__list {
     gap: 25px;
+  }
+  .top .personal-card__profession {
+    font-size: 12px;
+  }
+  .top .personal-card__button {
+    padding: 5px;
+  }
+  .top .personal-card > div:first-child {
+    margin-right: 15px;
   }
   .persons__wrap {
     margin: 108px 30px 0px 30px;
@@ -1458,6 +1505,9 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
+  .top .slick-list {
+    padding: 0 30% 0 0 !important;
+  }
   .subscribe__wrap {
     margin: 10px 25px;
   }
@@ -1618,6 +1668,9 @@ body {
     font-size: 10.9922px;
     line-height: 1.273;
   }
+  .persons .slick-list {
+    padding: 0 20% 0 0 !important;
+  }
   .about__wrap {
     margin-right: 21px;
     margin-left: 21px;
@@ -1627,6 +1680,9 @@ body {
 @media screen and (max-width: 500px) {
   .hero .personal-card {
     right: 0px;
+  }
+  .top .slick-list {
+    padding: 0 15% 0 0 !important;
   }
   .navigation__list {
     margin: 10px auto;
@@ -1699,12 +1755,29 @@ body {
     display: none;
   }
 }
+@media screen and (max-width: 450px) {
+  .persons .slick-list {
+    padding: 0 20% 0 0 !important;
+  }
+  .persons__item {
+    padding: 70px 13px 28px !important;
+  }
+  .persons .stats__text {
+    font-size: 10px;
+  }
+  .persons .stats__number {
+    font-size: 15px;
+  }
+}
 @media screen and (max-width: 400px) {
   .header__wrap {
     margin: 26.88px 7.5% 0px 6.2%;
   }
   .hero__wrap {
     padding-top: 56px;
+  }
+  .top .slick-list {
+    padding: 0 8% 0 0 !important;
   }
 }
 @media screen and (max-width: 375px) {
@@ -1778,14 +1851,22 @@ body {
     margin-right: 0px;
     margin-left: 0px;
   }
-  .persons__item {
-    padding: 70px 13px 28px !important;
+  .persons .slick-list {
+    padding: 0 10% 0 0 !important;
   }
-  .persons .stats__text {
+}
+@media screen and (max-width: 365px) {
+  .top .personal-card__profession {
+    font-size: 11px;
+  }
+  .top .personal-card .person__nikname {
     font-size: 10px;
   }
-  .persons .stats__number {
-    font-size: 15px;
+  .top .personal-card > div:first-child {
+    margin-right: 10px;
+  }
+  .top .personal-card__button {
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -1807,6 +1888,9 @@ body {
   .hero .partners img {
     width: 100%;
   }
+  .top .personal-card {
+    padding: 24.87px 6px 18px;
+  }
 }
 @media screen and (max-width: 300px) {
   .hero .partners__list {
@@ -1824,6 +1908,18 @@ body {
   }
   .persons .stats__list {
     flex-wrap: wrap;
+  }
+  .persons .stats__item {
+    margin-right: 3px;
+  }
+  .persons .stats__number {
+    font-size: 12px;
+  }
+  .persons .stats__text {
+    font-size: 8px;
+  }
+  .persons__button {
+    max-width: 100px;
   }
   .subscribe form {
     flex-wrap: wrap;

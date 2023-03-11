@@ -707,6 +707,10 @@ body {
     display: flex;
   }
 
+  .slick-list {
+    padding: 0 0% 0 0 !important;
+  }
+
   &__wrap {
     margin: 197.52px 6% 0px 7.5%;
   }
@@ -905,6 +909,9 @@ body {
     justify-content: space-between;
     display: flex;
   }
+  .slick-list {
+    padding: 0 0% 0 0 !important;
+  }
 
   &__wrap {
     margin: 160px 6.657% 0px 6.84%;
@@ -1056,7 +1063,7 @@ body {
 
   .section-title_accent {
     color: #ff56f6;
-
+    text-decoration: none;
     svg {
       margin-left: 4px;
       path {
@@ -1418,6 +1425,10 @@ body {
     }
   }
 
+  &__item {
+    cursor: pointer;
+  }
+
   &__item:first-child {
     font-weight: 500;
     font-size: 19.8983px;
@@ -1481,6 +1492,7 @@ body {
 
     .footer__item-second {
       padding: 0px 8px;
+      cursor: pointer;
       &:first-child {
         padding-left: 0px;
       }
@@ -1538,6 +1550,7 @@ body {
 
   &__item,
   &__item a {
+    cursor: pointer;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
@@ -1581,6 +1594,20 @@ body {
   .persons {
     &__item {
       max-width: 437.76px;
+    }
+  }
+}
+
+@media screen and (max-width: 1590px) {
+  .top {
+    .slick-list {
+      padding: 0 20% 0 0 !important;
+    }
+  }
+
+  .persons {
+    .slick-list {
+      padding: 0 20% 0 0 !important;
     }
   }
 }
@@ -1713,6 +1740,20 @@ body {
       width: 45%;
     }
   }
+
+  .persons {
+    .slick-list {
+      padding: 0 10% 0 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .top {
+    .slick-list {
+      padding: 0 10% 0 0 !important;
+    }
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1833,6 +1874,16 @@ body {
   }
 }
 
+@media screen and (max-width: 1028px) {
+  .top {
+    .personal-card {
+      > div:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 991px) {
   .top {
     .personal-card {
@@ -1916,6 +1967,14 @@ body {
   }
 }
 
+@media screen and (max-width: 830px) {
+  .persons {
+    .slick-list {
+      padding: 0 35% 0 0 !important;
+    }
+  }
+}
+
 @media screen and (max-width: 800px) {
   .header {
     &__wrap {
@@ -1940,6 +1999,22 @@ body {
     .partners {
       &__list {
         gap: 25px;
+      }
+    }
+  }
+
+  .top {
+    .personal-card {
+      &__profession {
+        font-size: 12px;
+      }
+
+      &__button {
+        padding: 5px;
+      }
+
+      > div:first-child {
+        margin-right: 15px;
       }
     }
   }
@@ -2045,6 +2120,12 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .top {
+    .slick-list {
+      padding: 0 30% 0 0 !important;
+    }
+  }
+
   .subscribe {
     &__wrap {
       margin: 10px 25px;
@@ -2280,6 +2361,12 @@ body {
     }
   }
 
+  .persons {
+    .slick-list {
+      padding: 0 20% 0 0 !important;
+    }
+  }
+
   .about {
     &__wrap {
       // width: 100%;
@@ -2294,6 +2381,12 @@ body {
   .hero {
     .personal-card {
       right: 0px;
+    }
+  }
+
+  .top {
+    .slick-list {
+      padding: 0 15% 0 0 !important;
     }
   }
 
@@ -2394,6 +2487,27 @@ body {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .persons {
+    .slick-list {
+      padding: 0 20% 0 0 !important;
+    }
+
+    &__item {
+      padding: 70px 13px 28px !important;
+    }
+
+    .stats {
+      &__text {
+        font-size: 10px;
+      }
+      &__number {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 400px) {
   .header {
     &__wrap {
@@ -2404,6 +2518,12 @@ body {
   .hero {
     &__wrap {
       padding-top: 56px;
+    }
+  }
+
+  .top {
+    .slick-list {
+      padding: 0 8% 0 0 !important;
     }
   }
 }
@@ -2543,16 +2663,29 @@ body {
   }
 
   .persons {
-    &__item {
-      padding: 70px 13px 28px !important;
+    .slick-list {
+      padding: 0 10% 0 0 !important;
     }
+  }
+}
 
-    .stats {
-      &__text {
-        font-size: 10px;
+@media screen and (max-width: 365px) {
+  .top {
+    .personal-card {
+      &__profession {
+        font-size: 11px;
       }
-      &__number {
-        font-size: 15px;
+      .person {
+        &__nikname {
+          font-size: 10px;
+        }
+      }
+      > div:first-child {
+        margin-right: 10px;
+      }
+
+      &__button {
+        font-size: 10px;
       }
     }
   }
@@ -2579,6 +2712,17 @@ body {
       }
       img {
         width: 100%;
+      }
+    }
+  }
+
+  .top {
+    .personal-card {
+      padding: 24.87px 6px 18px;
+      > div {
+        // max-width: 100%;
+        // justify-content: center;
+        // display: grid;
       }
     }
   }
@@ -2614,6 +2758,22 @@ body {
       &__list {
         flex-wrap: wrap;
       }
+
+      &__item {
+        margin-right: 3px;
+      }
+
+      &__number {
+        font-size: 12px;
+      }
+
+      &__text {
+        font-size: 8px;
+      }
+    }
+
+    &__button {
+      max-width: 100px;
     }
   }
 
