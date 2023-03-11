@@ -835,12 +835,15 @@ body {
 
   &__list {
     list-style: none;
-    -moz-column-count: 2; /* Firefox */
-    -webkit-column-count: 2; /* Safari and Chrome */
-    column-count: 2;
-    gap: 0;
+    // -moz-column-count: 2; /* Firefox */
+    // -webkit-column-count: 2; /* Safari and Chrome */
+    // column-count: 2;
+    // gap: 0;
     // margin-bottom: 43px;
     margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
   }
 
   &__item {
@@ -1305,6 +1308,7 @@ body {
   &__input {
     padding: 13px 17.69px;
     width: 274px;
+    height: fit-content;
     border-radius: 5.5273px 0px 0px 5.5273px;
   }
 
@@ -1327,7 +1331,7 @@ body {
     // margin-left: 8.8px;
     border-width: 2.2px;
     border-style: solid;
-    height: -webkit-fill-available;
+    height: 100%;
 
     &_wrap {
       background: linear-gradient(
@@ -1859,6 +1863,12 @@ body {
     }
   }
 
+  .collections {
+    &__list {
+      margin-right: 60px;
+    }
+  }
+
   .subscribe {
     .section-title {
       font-size: 26.2703px;
@@ -1971,6 +1981,12 @@ body {
   .persons {
     .slick-list {
       padding: 0 35% 0 0 !important;
+    }
+  }
+
+  .collections {
+    &__list {
+      margin-right: 0px;
     }
   }
 }
@@ -2328,6 +2344,10 @@ body {
   }
 
   .collections {
+    &__first-col {
+      height: fit-content;
+    }
+
     .tab-content {
       height: 350px;
     }
@@ -2577,8 +2597,13 @@ body {
   }
 
   .collections {
+    &__item {
+      &:nth-child(odd) {
+        margin-right: 0px;
+      }
+    }
     &__list {
-      gap: 17px;
+      // gap: 17px;
     }
     .collection-button {
       // width: 120px;
@@ -2739,7 +2764,8 @@ body {
 
   .collections {
     &__list {
-      column-count: 1;
+      // column-count: 1;
+      display: block;
     }
 
     &__item {
