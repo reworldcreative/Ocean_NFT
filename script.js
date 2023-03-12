@@ -41,3 +41,11 @@ $(document).ready(function () {
     ],
   });
 });
+
+let navbar = document.getElementById("header").classList;
+let active_class = "header_scrolled";
+
+window.addEventListener("scroll", (e) => {
+  if (scrollY > 500) navbar.add(active_class);
+  else navbar.remove(active_class);
+});

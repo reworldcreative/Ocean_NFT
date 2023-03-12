@@ -40,6 +40,14 @@ body {
   font-style: normal;
 }
 
+.header_scrolled {
+  position: fixed !important;
+  background-color: rgba(39, 39, 39, 0.9);
+  z-index: 100;
+}
+.header_scrolled .header__wrap {
+  margin-bottom: 42px;
+}
 .header__wrap {
   margin: 42px 7.03% 0px 7.116%;
   overflow: hidden;
