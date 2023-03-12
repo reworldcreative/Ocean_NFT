@@ -341,7 +341,8 @@ body {
   }
 
   &__personal-card {
-    clip-path: polygon(15% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 19%);
+    // clip-path: polygon(15% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 19%);
+    clip-path: polygon(14% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 24%);
     // bottom: 63px;
     // right: -70px;
 
@@ -351,8 +352,12 @@ body {
   }
 
   .personal-card::after {
-    border-image: none;
-    border-color: rgba(255, 255, 255, 0.2);
+    // border-image: none;
+    // border-color: rgba(255, 255, 255, 0.2);
+    background-image: url("./img/border-catd.svg");
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -470,6 +475,7 @@ body {
 
     &_wrap {
       padding: 2px;
+      border-radius: 2px;
       width: fit-content;
       background-image: linear-gradient(
         275deg,
@@ -1605,7 +1611,7 @@ body {
 @media screen and (max-width: 1590px) {
   .top {
     .slick-list {
-      padding: 0 20% 0 0 !important;
+      padding: 0 19% 0 0 !important;
     }
   }
 
@@ -2022,7 +2028,7 @@ body {
   .top {
     .personal-card {
       &__profession {
-        font-size: 12px;
+        font-size: 13.6px;
       }
 
       &__button {
@@ -2567,6 +2573,9 @@ body {
       &__button {
         font-size: 15px;
         padding: 3px;
+        img {
+          margin-left: 5px;
+        }
       }
 
       &__profession {
