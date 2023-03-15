@@ -65,10 +65,11 @@ body {
 }
 
 .header {
+  overflow: visible;
   &_scrolled {
     position: fixed !important;
     background-color: rgba(39, 39, 39, 0.9);
-    z-index: 100;
+    z-index: 50;
     .header__wrap {
       margin-bottom: 42px;
     }
@@ -77,15 +78,55 @@ body {
   &__wrap {
     // margin: 42px 5.86% 0px 5.93%;
     margin: 42px 7.03% 0px 7.116%;
-    overflow: hidden;
+    // overflow: hidden;
   }
 
   &__icons {
     display: contents;
+    cursor: pointer;
   }
 
   &__icon:first-child {
     margin-right: 40.9px;
+    position: relative;
+
+    .cart_badge {
+      position: absolute;
+      left: 10px;
+      display: none;
+
+      &.show {
+        display: initial;
+      }
+    }
+  }
+}
+
+.modal {
+  &-content {
+    // background: linear-gradient(
+    //   92.23deg,
+    //   #ff56f6 21.43%,
+    //   #b936ee 50.63%,
+    //   #3bace2 100%,
+    //   #406aff 117.04%
+    // );
+
+    background-color: #3f2372;
+
+    // .close {
+    //   background-color: transparent;
+    //   border: none;
+    // }
+
+    .nav-link {
+      color: $main-color;
+    }
+
+    .nav-link:focus,
+    .nav-link:active {
+      color: rgb(216, 32, 139);
+    }
   }
 }
 
@@ -111,6 +152,32 @@ body {
   }
 }
 
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-menu {
+  background-color: #27252e;
+  color: $main-color;
+  padding: 10px;
+
+  .removebtn {
+    position: absolute;
+    right: 5px;
+  }
+
+  .card__item {
+    margin-bottom: 20px;
+
+    p {
+      margin-bottom: 5px;
+    }
+  }
+  .card__item:last-child {
+    margin-bottom: 0px;
+  }
+}
+
 .navbar-toggler {
   max-width: 21px;
   border: none;
@@ -124,16 +191,18 @@ body {
   margin-right: 0px;
   margin-left: auto;
   margin-bottom: 5.61px;
-  border-radius: 30%;
+  border-radius: 20%;
   display: flex;
+  background-image: none !important;
 }
 
 .navbar-toggler-icon:nth-child(2) {
   width: 13.57px;
+  height: 3px;
 }
 
 .navbar-toggler-icon:last-child {
-  // margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .navigation {
@@ -175,6 +244,216 @@ body {
     &:focus {
       color: $main-color !important;
     }
+  }
+}
+
+.personal-card {
+  padding: 27.64px 21px 17.69px 18.79px;
+  position: relative;
+  max-width: fit-content;
+
+  > div {
+    max-width: fit-content;
+  }
+
+  > div:first-child {
+    margin-right: 45px;
+  }
+
+  &::after {
+    display: block;
+    content: " ";
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 8.84367px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) -1.52%,
+      rgba(255, 255, 255, 0.024) 104.35%
+    );
+    border-width: 2.8px;
+    border-style: solid;
+    border-image: linear-gradient(
+        140deg,
+        rgba(255, 255, 255, 0.28) 0%,
+        rgba(255, 255, 255, 0) 100%
+      )
+      1;
+    backdrop-filter: blur(30.4001px);
+  }
+
+  &__profession {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-size: 17.6873px;
+    line-height: 200%;
+
+    display: flex;
+    align-items: center;
+
+    color: $main-color;
+    margin: 0px;
+  }
+
+  &__button {
+    padding: 7.74px 8.84px 7.74px 9.95px;
+    border: 8px;
+
+    // i {
+    //   // font-size: 24px;
+    //   margin-left: 9px;
+    // }
+
+    &_wrap {
+      padding: 2px;
+      border-radius: 2px;
+      width: fit-content;
+      background-image: linear-gradient(
+        275deg,
+        #ff56f6 21.43%,
+        #b936ee 50.63%,
+        #3bace2 100%,
+        #406aff 117.04%
+      );
+    }
+
+    img {
+      margin-left: 9px;
+    }
+  }
+
+  .person {
+    display: flex;
+    align-items: center;
+
+    &__avatar {
+      margin-right: 4.32px;
+    }
+
+    &__nikname {
+      font-family: "Rajdhani", sans-serif;
+      font-weight: 600;
+      font-size: 20.1601px;
+      line-height: 229%;
+
+      display: flex;
+      align-items: center;
+
+      color: $main-color;
+      margin-right: 3.32px;
+      margin-bottom: 0px;
+    }
+  }
+
+  .price {
+    margin-top: 10px;
+    &__title {
+      font-family: "Rajdhani", sans-serif;
+      font-weight: 600;
+      font-size: 11.0546px;
+      line-height: 320%;
+
+      display: flex;
+      align-items: center;
+
+      color: $main-color;
+
+      opacity: 0.7;
+      // margin-bottom: 11px;
+      margin-bottom: 0px;
+    }
+
+    &__logo {
+      margin-right: 7.6px;
+      width: auto;
+    }
+
+    &__eth {
+      font-family: "Orbitron", sans-serif;
+      font-weight: 700;
+      font-size: 9.71776px;
+      // line-height: 1.235;
+
+      color: $main-color;
+      margin-right: 5.53px;
+      margin-bottom: 0px;
+    }
+
+    &__dollar {
+      font-family: "Rajdhani", sans-serif;
+      font-weight: 400;
+      font-size: 14.0546px;
+      // line-height: 320%;
+
+      color: $main-color;
+
+      opacity: 0.7;
+      margin-bottom: 0px;
+    }
+  }
+
+  .time {
+    &__title {
+      font-family: "Rajdhani", sans-serif;
+      font-weight: 600;
+      font-size: 11.0546px;
+      line-height: 320%;
+
+      display: flex;
+      align-items: center;
+
+      color: $main-color;
+
+      opacity: 0.7;
+      // margin-bottom: 13px;
+      margin-bottom: 0px;
+    }
+
+    &__list {
+      list-style: none;
+      display: flex;
+    }
+
+    &__item {
+      margin-right: 17.69px;
+    }
+
+    &__item:last-child {
+      margin-right: 0px;
+    }
+
+    &__number {
+      font-family: "Rajdhani", sans-serif;
+      font-weight: 600;
+      font-size: 17.6873px;
+      // line-height: 200%;
+
+      display: flex;
+      align-items: center;
+
+      color: $main-color;
+    }
+
+    &__text {
+      font-family: "Rajdhani";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11.0546px;
+      // line-height: 320%;
+
+      display: flex;
+      align-items: center;
+
+      color: $main-color;
+
+      opacity: 0.7;
+    }
+
+    margin-bottom: 25.95px;
   }
 }
 
@@ -350,14 +629,31 @@ body {
   }
 
   &__personal-card {
+    padding: 27.64px 21px 17.69px 23px;
     // clip-path: polygon(15% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 19%);
-    clip-path: polygon(14% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 24%);
+    clip-path: polygon(14% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
     // bottom: 63px;
     // right: -70px;
 
     bottom: 115px;
     right: -180px;
     border: none;
+
+    .price__logo {
+      margin-right: 5.8px;
+      width: 10px;
+      height: 17px;
+    }
+
+    .price__dollar {
+      font-size: 11px;
+    }
+
+    .person {
+      &__nikname {
+        font-size: 15.48px;
+      }
+    }
   }
 
   .personal-card::after {
@@ -366,7 +662,7 @@ body {
     background-image: url("./img/border-catd.svg");
     border: none;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -418,216 +714,6 @@ body {
   &:hover {
     color: #ff56f6 !important;
     text-decoration: none;
-  }
-}
-
-.personal-card {
-  padding: 27.64px 21px 17.69px 18.79px;
-  position: relative;
-  max-width: fit-content;
-
-  > div {
-    max-width: fit-content;
-  }
-
-  > div:first-child {
-    margin-right: 45px;
-  }
-
-  &::after {
-    display: block;
-    content: " ";
-    right: 0;
-    top: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    border-radius: 8.84367px;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.1) -1.52%,
-      rgba(255, 255, 255, 0.024) 104.35%
-    );
-    border-width: 2.8px;
-    border-style: solid;
-    border-image: linear-gradient(
-        140deg,
-        rgba(255, 255, 255, 0.28) 0%,
-        rgba(255, 255, 255, 0) 100%
-      )
-      1;
-    backdrop-filter: blur(30.4001px);
-  }
-
-  &__profession {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 700;
-    font-size: 17.6873px;
-    line-height: 200%;
-
-    display: flex;
-    align-items: center;
-
-    color: $main-color;
-    margin: 0px;
-  }
-
-  &__button {
-    padding: 7.74px 8.84px 7.74px 9.95px;
-    border: 8px;
-
-    // i {
-    //   // font-size: 24px;
-    //   margin-left: 9px;
-    // }
-
-    &_wrap {
-      padding: 2px;
-      border-radius: 2px;
-      width: fit-content;
-      background-image: linear-gradient(
-        275deg,
-        #ff56f6 21.43%,
-        #b936ee 50.63%,
-        #3bace2 100%,
-        #406aff 117.04%
-      );
-    }
-
-    img {
-      margin-left: 9px;
-    }
-  }
-
-  .person {
-    display: flex;
-    align-items: center;
-
-    &__avatar {
-      margin-right: 3.32px;
-    }
-
-    &__nikname {
-      font-family: "Rajdhani", sans-serif;
-      font-weight: 600;
-      font-size: 20.1601px;
-      line-height: 229%;
-
-      display: flex;
-      align-items: center;
-
-      color: $main-color;
-      margin-right: 3.32px;
-      margin-bottom: 0px;
-    }
-  }
-
-  .price {
-    margin-top: 10px;
-    &__title {
-      font-family: "Rajdhani", sans-serif;
-      font-weight: 600;
-      font-size: 11.0546px;
-      line-height: 320%;
-
-      display: flex;
-      align-items: center;
-
-      color: $main-color;
-
-      opacity: 0.7;
-      // margin-bottom: 11px;
-      margin-bottom: 0px;
-    }
-
-    &__logo {
-      margin-right: 5.87px;
-      width: auto;
-    }
-
-    &__eth {
-      font-family: "Orbitron", sans-serif;
-      font-weight: 700;
-      font-size: 9.71776px;
-      // line-height: 1.235;
-
-      color: $main-color;
-      margin-right: 5.53px;
-      margin-bottom: 0px;
-    }
-
-    &__dollar {
-      font-family: "Rajdhani", sans-serif;
-      font-weight: 400;
-      font-size: 11.0546px;
-      // line-height: 320%;
-
-      color: $main-color;
-
-      opacity: 0.7;
-      margin-bottom: 0px;
-    }
-  }
-
-  .time {
-    &__title {
-      font-family: "Rajdhani", sans-serif;
-      font-weight: 600;
-      font-size: 11.0546px;
-      line-height: 320%;
-
-      display: flex;
-      align-items: center;
-
-      color: $main-color;
-
-      opacity: 0.7;
-      // margin-bottom: 13px;
-      margin-bottom: 0px;
-    }
-
-    &__list {
-      list-style: none;
-      display: flex;
-    }
-
-    &__item {
-      margin-right: 17.69px;
-    }
-
-    &__item:last-child {
-      margin-right: 0px;
-    }
-
-    &__number {
-      font-family: "Rajdhani", sans-serif;
-      font-weight: 600;
-      font-size: 17.6873px;
-      // line-height: 200%;
-
-      display: flex;
-      align-items: center;
-
-      color: $main-color;
-    }
-
-    &__text {
-      font-family: "Rajdhani";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 11.0546px;
-      // line-height: 320%;
-
-      display: flex;
-      align-items: center;
-
-      color: $main-color;
-
-      opacity: 0.7;
-    }
-
-    margin-bottom: 25.95px;
   }
 }
 
@@ -749,6 +835,7 @@ body {
 
   .personal-card {
     padding: 35px 27px 26px 24px;
+    // padding: 35px 27px 26px 30px;
 
     > div:first-child {
       margin-right: 24px;
@@ -796,7 +883,7 @@ body {
       }
 
       &__logo {
-        margin-right: 2px;
+        // margin-right: 2px;
       }
 
       &__eth {
@@ -858,7 +945,8 @@ body {
     margin-bottom: 0px;
     display: flex;
     flex-wrap: wrap;
-    margin-right: 40px;
+    // margin-right: 40px;
+    margin-right: 100px;
   }
 
   &__item {
@@ -876,7 +964,8 @@ body {
   .all-link {
     font-size: 19.8983px;
     line-height: 1.256;
-    margin-right: 43px;
+    // margin-right: 43px;
+    margin-right: 100px;
     > img {
       margin-left: 15.48px;
     }
@@ -1154,6 +1243,11 @@ body {
     text-align: initial;
   }
 
+  &__logo {
+    width: 8.47px;
+    height: 13.76px;
+  }
+
   &__count {
     font-weight: 500;
     font-size: 13.7568px;
@@ -1389,7 +1483,7 @@ body {
     color: $main-color !important;
 
     margin-bottom: 30.9px;
-
+    text-decoration: none;
     &__image {
       margin-right: 4.4px;
     }
@@ -1624,6 +1718,15 @@ body {
     }
   }
 
+  .collections {
+    &__list {
+      margin-right: 40px;
+    }
+    .all-link {
+      margin-right: 40px;
+    }
+  }
+
   .persons {
     .slick-list {
       padding: 0 20% 0 0 !important;
@@ -1797,6 +1900,7 @@ body {
   .top {
     &__wrap {
       margin: 166px 6% 0px 7.5%;
+      // margin: 166px 0% 0px 7.5%;
     }
     .personal-card {
       padding: 24.87px 19px 18px 17px;
@@ -1822,6 +1926,7 @@ body {
   .persons {
     &__wrap {
       margin: 108px 6% 0px 7.5%;
+      // margin: 108px 0% 0px 7.5%;
     }
 
     &__item {
@@ -1934,7 +2039,7 @@ body {
         }
 
         &__logo {
-          margin-right: 1px;
+          // margin-right: 1px;
         }
 
         &__eth {
@@ -2035,6 +2140,9 @@ body {
   }
 
   .top {
+    &__wrap {
+      margin: 166px 0% 0px 7.5%;
+    }
     .personal-card {
       &__profession {
         font-size: 13.6px;
@@ -2052,7 +2160,7 @@ body {
 
   .persons {
     &__wrap {
-      margin: 108px 30px 0px 30px;
+      margin: 108px 0px 0px 30px;
     }
 
     .person {
@@ -2189,6 +2297,11 @@ body {
 }
 
 @media screen and (max-width: 750px) {
+  .personal-card .price__logo {
+    margin-right: 5.3px;
+    width: 10px;
+    height: 16px;
+  }
   .collections {
     &__first-col {
       max-width: 100%;
@@ -2343,7 +2456,7 @@ body {
 
   .top {
     &__wrap {
-      margin: 108.21px 6% 0px 7.5%;
+      margin: 108.21px 0% 0px 7.5%;
     }
   }
 
@@ -2416,6 +2529,12 @@ body {
   .hero {
     .personal-card {
       right: 0px;
+      // clip-path: polygon(14% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 27%);
+
+      &::after {
+        background-size: cover;
+        // border-bottom: solid 2px #493d6e5c;
+      }
     }
   }
 
@@ -2468,7 +2587,7 @@ body {
       }
 
       &__logo {
-        margin-right: 1.5px;
+        // margin-right: 1.5px;
       }
 
       &__eth {
@@ -2566,6 +2685,10 @@ body {
 @media screen and (max-width: 375px) {
   .hero {
     .personal-card {
+      &::after {
+        border: none;
+        background-size: contain;
+      }
       > div:first-child {
         margin-right: 0px;
       }
@@ -2607,10 +2730,18 @@ body {
 
   .top {
     &__wrap {
-      margin: 50px 6% 0px 7.5%;
+      // margin: 50px 6% 0px 7.5%;
+      margin: 50px 0% 0px 7.5%;
     }
     .personal-card {
-      justify-content: center !important;
+      // justify-content: center !important;
+      &__button {
+        padding: 7px 9px 10px;
+
+        &_wrap {
+          margin-top: 24px;
+        }
+      }
     }
   }
 
@@ -2625,6 +2756,10 @@ body {
     }
     .collection-button {
       // width: 120px;
+    }
+
+    .all-link {
+      margin-right: 0px;
     }
   }
 
@@ -2678,6 +2813,10 @@ body {
   .subscribe {
     &__input {
       width: 100%;
+    }
+
+    &__image {
+      height: 380px;
     }
   }
 }

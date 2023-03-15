@@ -40,23 +40,46 @@ body {
   font-style: normal;
 }
 
+.header {
+  overflow: visible;
+}
 .header_scrolled {
   position: fixed !important;
   background-color: rgba(39, 39, 39, 0.9);
-  z-index: 100;
+  z-index: 50;
 }
 .header_scrolled .header__wrap {
   margin-bottom: 42px;
 }
 .header__wrap {
   margin: 42px 7.03% 0px 7.116%;
-  overflow: hidden;
 }
 .header__icons {
   display: contents;
+  cursor: pointer;
 }
 .header__icon:first-child {
   margin-right: 40.9px;
+  position: relative;
+}
+.header__icon:first-child .cart_badge {
+  position: absolute;
+  left: 10px;
+  display: none;
+}
+.header__icon:first-child .cart_badge.show {
+  display: initial;
+}
+
+.modal-content {
+  background-color: #3f2372;
+}
+.modal-content .nav-link {
+  color: #ffffff;
+}
+.modal-content .nav-link:focus,
+.modal-content .nav-link:active {
+  color: rgb(216, 32, 139);
 }
 
 .logo {
@@ -81,6 +104,29 @@ body {
   animation: logo-rotate 1s ease-in-out;
 }
 
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-menu {
+  background-color: #27252e;
+  color: #ffffff;
+  padding: 10px;
+}
+.dropdown-menu .removebtn {
+  position: absolute;
+  right: 5px;
+}
+.dropdown-menu .card__item {
+  margin-bottom: 20px;
+}
+.dropdown-menu .card__item p {
+  margin-bottom: 5px;
+}
+.dropdown-menu .card__item:last-child {
+  margin-bottom: 0px;
+}
+
 .navbar-toggler {
   max-width: 21px;
   border: none;
@@ -94,12 +140,18 @@ body {
   margin-right: 0px;
   margin-left: auto;
   margin-bottom: 5.61px;
-  border-radius: 30%;
+  border-radius: 20%;
   display: flex;
+  background-image: none !important;
 }
 
 .navbar-toggler-icon:nth-child(2) {
   width: 13.57px;
+  height: 3px;
+}
+
+.navbar-toggler-icon:last-child {
+  margin-bottom: 0;
 }
 
 .navigation__list {
@@ -131,6 +183,156 @@ body {
 }
 .navigation__link:focus {
   color: #ffffff !important;
+}
+
+.personal-card {
+  padding: 27.64px 21px 17.69px 18.79px;
+  position: relative;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.personal-card > div {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.personal-card > div:first-child {
+  margin-right: 45px;
+}
+.personal-card::after {
+  display: block;
+  content: " ";
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 8.84367px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+  border-width: 2.8px;
+  border-style: solid;
+  -o-border-image: linear-gradient(140deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%) 1;
+     border-image: linear-gradient(140deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%) 1;
+  -webkit-backdrop-filter: blur(30.4001px);
+          backdrop-filter: blur(30.4001px);
+}
+.personal-card__profession {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-size: 17.6873px;
+  line-height: 200%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin: 0px;
+}
+.personal-card__button {
+  padding: 7.74px 8.84px 7.74px 9.95px;
+  border: 8px;
+}
+.personal-card__button_wrap {
+  padding: 2px;
+  border-radius: 2px;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-image: linear-gradient(275deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%);
+}
+.personal-card__button img {
+  margin-left: 9px;
+}
+.personal-card .person {
+  display: flex;
+  align-items: center;
+}
+.personal-card .person__avatar {
+  margin-right: 4.32px;
+}
+.personal-card .person__nikname {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-size: 20.1601px;
+  line-height: 229%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin-right: 3.32px;
+  margin-bottom: 0px;
+}
+.personal-card .price {
+  margin-top: 10px;
+}
+.personal-card .price__title {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-size: 11.0546px;
+  line-height: 320%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-bottom: 0px;
+}
+.personal-card .price__logo {
+  margin-right: 7.6px;
+  width: auto;
+}
+.personal-card .price__eth {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  font-size: 9.71776px;
+  color: #ffffff;
+  margin-right: 5.53px;
+  margin-bottom: 0px;
+}
+.personal-card .price__dollar {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-size: 14.0546px;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-bottom: 0px;
+}
+.personal-card .time {
+  margin-bottom: 25.95px;
+}
+.personal-card .time__title {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-size: 11.0546px;
+  line-height: 320%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-bottom: 0px;
+}
+.personal-card .time__list {
+  list-style: none;
+  display: flex;
+}
+.personal-card .time__item {
+  margin-right: 17.69px;
+}
+.personal-card .time__item:last-child {
+  margin-right: 0px;
+}
+.personal-card .time__number {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-size: 17.6873px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.personal-card .time__text {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11.0546px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  opacity: 0.7;
 }
 
 .hero__col-logo {
@@ -248,17 +450,29 @@ body {
           clip-path: polygon(0 20%, 20% 0, 100% 0, 100% 80%, 80% 100%, 0 100%);
 }
 .hero__personal-card {
-  -webkit-clip-path: polygon(14% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 24%);
-          clip-path: polygon(14% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 24%);
+  padding: 27.64px 21px 17.69px 23px;
+  -webkit-clip-path: polygon(14% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
+          clip-path: polygon(14% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
   bottom: 115px;
   right: -180px;
   border: none;
+}
+.hero__personal-card .price__logo {
+  margin-right: 5.8px;
+  width: 10px;
+  height: 17px;
+}
+.hero__personal-card .price__dollar {
+  font-size: 11px;
+}
+.hero__personal-card .person__nikname {
+  font-size: 15.48px;
 }
 .hero .personal-card::after {
   background-image: url("./img/border-catd.svg");
   border: none;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .button {
@@ -302,156 +516,6 @@ body {
 .all-link:hover {
   color: #ff56f6 !important;
   text-decoration: none;
-}
-
-.personal-card {
-  padding: 27.64px 21px 17.69px 18.79px;
-  position: relative;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
-.personal-card > div {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
-.personal-card > div:first-child {
-  margin-right: 45px;
-}
-.personal-card::after {
-  display: block;
-  content: " ";
-  right: 0;
-  top: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  border-radius: 8.84367px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
-  border-width: 2.8px;
-  border-style: solid;
-  -o-border-image: linear-gradient(140deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%) 1;
-     border-image: linear-gradient(140deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%) 1;
-  -webkit-backdrop-filter: blur(30.4001px);
-          backdrop-filter: blur(30.4001px);
-}
-.personal-card__profession {
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 700;
-  font-size: 17.6873px;
-  line-height: 200%;
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  margin: 0px;
-}
-.personal-card__button {
-  padding: 7.74px 8.84px 7.74px 9.95px;
-  border: 8px;
-}
-.personal-card__button_wrap {
-  padding: 2px;
-  border-radius: 2px;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-image: linear-gradient(275deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%);
-}
-.personal-card__button img {
-  margin-left: 9px;
-}
-.personal-card .person {
-  display: flex;
-  align-items: center;
-}
-.personal-card .person__avatar {
-  margin-right: 3.32px;
-}
-.personal-card .person__nikname {
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 600;
-  font-size: 20.1601px;
-  line-height: 229%;
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  margin-right: 3.32px;
-  margin-bottom: 0px;
-}
-.personal-card .price {
-  margin-top: 10px;
-}
-.personal-card .price__title {
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 600;
-  font-size: 11.0546px;
-  line-height: 320%;
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  opacity: 0.7;
-  margin-bottom: 0px;
-}
-.personal-card .price__logo {
-  margin-right: 5.87px;
-  width: auto;
-}
-.personal-card .price__eth {
-  font-family: "Orbitron", sans-serif;
-  font-weight: 700;
-  font-size: 9.71776px;
-  color: #ffffff;
-  margin-right: 5.53px;
-  margin-bottom: 0px;
-}
-.personal-card .price__dollar {
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 400;
-  font-size: 11.0546px;
-  color: #ffffff;
-  opacity: 0.7;
-  margin-bottom: 0px;
-}
-.personal-card .time {
-  margin-bottom: 25.95px;
-}
-.personal-card .time__title {
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 600;
-  font-size: 11.0546px;
-  line-height: 320%;
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  opacity: 0.7;
-  margin-bottom: 0px;
-}
-.personal-card .time__list {
-  list-style: none;
-  display: flex;
-}
-.personal-card .time__item {
-  margin-right: 17.69px;
-}
-.personal-card .time__item:last-child {
-  margin-right: 0px;
-}
-.personal-card .time__number {
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 600;
-  font-size: 17.6873px;
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-}
-.personal-card .time__text {
-  font-family: "Rajdhani";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 11.0546px;
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  opacity: 0.7;
 }
 
 .partners {
@@ -566,9 +630,6 @@ body {
   font-size: 14.4001px;
   line-height: 3.19;
 }
-.top .personal-card .price__logo {
-  margin-right: 2px;
-}
 .top .personal-card .price__eth {
   font-size: 12.6587px;
   line-height: 1.26;
@@ -607,7 +668,7 @@ body {
   margin-bottom: 0px;
   display: flex;
   flex-wrap: wrap;
-  margin-right: 40px;
+  margin-right: 100px;
 }
 .collections__item {
   margin-bottom: 43px;
@@ -621,7 +682,7 @@ body {
 .collections .all-link {
   font-size: 19.8983px;
   line-height: 1.256;
-  margin-right: 43px;
+  margin-right: 100px;
 }
 .collections .all-link > img {
   margin-left: 15.48px;
@@ -801,6 +862,10 @@ body {
   font-weight: 500;
   font-size: 19.0479px;
   text-align: initial;
+}
+.sellers__logo {
+  width: 8.47px;
+  height: 13.76px;
 }
 .sellers__count {
   font-weight: 500;
@@ -986,6 +1051,7 @@ body {
   line-height: 1.256;
   color: #ffffff !important;
   margin-bottom: 30.9px;
+  text-decoration: none;
 }
 .footer .logo__image {
   margin-right: 4.4px;
@@ -1165,6 +1231,12 @@ body {
 @media screen and (max-width: 1590px) {
   .top .slick-list {
     padding: 0 19% 0 0 !important;
+  }
+  .collections__list {
+    margin-right: 40px;
+  }
+  .collections .all-link {
+    margin-right: 40px;
   }
   .persons .slick-list {
     padding: 0 20% 0 0 !important;
@@ -1374,9 +1446,6 @@ body {
   .top .personal-card .price__title {
     font-size: 8.5004px;
   }
-  .top .personal-card .price__logo {
-    margin-right: 1px;
-  }
   .top .personal-card .price__eth {
     font-size: 7.47244px;
     line-height: 1.2;
@@ -1439,6 +1508,9 @@ body {
   .hero .partners__list {
     gap: 25px;
   }
+  .top__wrap {
+    margin: 166px 0% 0px 7.5%;
+  }
   .top .personal-card__profession {
     font-size: 13.6px;
   }
@@ -1449,7 +1521,7 @@ body {
     margin-right: 15px;
   }
   .persons__wrap {
-    margin: 108px 30px 0px 30px;
+    margin: 108px 0px 0px 30px;
   }
   .persons .person__photo {
     width: 112.52px;
@@ -1544,6 +1616,11 @@ body {
   }
 }
 @media screen and (max-width: 750px) {
+  .personal-card .price__logo {
+    margin-right: 5.3px;
+    width: 10px;
+    height: 16px;
+  }
   .collections__first-col {
     max-width: 100%;
   }
@@ -1649,7 +1726,7 @@ body {
     right: -30px;
   }
   .top__wrap {
-    margin: 108.21px 6% 0px 7.5%;
+    margin: 108.21px 0% 0px 7.5%;
   }
   .partners img {
     width: 143px;
@@ -1703,6 +1780,9 @@ body {
   .hero .personal-card {
     right: 0px;
   }
+  .hero .personal-card::after {
+    background-size: cover;
+  }
   .top .slick-list {
     padding: 0 15% 0 0 !important;
   }
@@ -1737,9 +1817,6 @@ body {
   .personal-card .price__title {
     font-size: 10.6579px;
     line-height: 3.19;
-  }
-  .personal-card .price__logo {
-    margin-right: 1.5px;
   }
   .personal-card .price__eth {
     font-size: 9.36903px;
@@ -1803,6 +1880,10 @@ body {
   }
 }
 @media screen and (max-width: 375px) {
+  .hero .personal-card::after {
+    border: none;
+    background-size: contain;
+  }
   .hero .personal-card > div:first-child {
     margin-right: 0px;
   }
@@ -1820,12 +1901,18 @@ body {
     line-height: 1;
   }
   .top__wrap {
-    margin: 50px 6% 0px 7.5%;
+    margin: 50px 0% 0px 7.5%;
   }
-  .top .personal-card {
-    justify-content: center !important;
+  .top .personal-card__button {
+    padding: 7px 9px 10px;
+  }
+  .top .personal-card__button_wrap {
+    margin-top: 24px;
   }
   .collections__item:nth-child(odd) {
+    margin-right: 0px;
+  }
+  .collections .all-link {
     margin-right: 0px;
   }
   .persons__item {
@@ -1862,6 +1949,9 @@ body {
   }
   .subscribe__input {
     width: 100%;
+  }
+  .subscribe__image {
+    height: 380px;
   }
 }
 @media screen and (max-width: 374px) {

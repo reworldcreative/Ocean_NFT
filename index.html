@@ -47,7 +47,6 @@
 </head>
 
 <body>
-
     <header id='header' class="container-fluid header p-0 d-flex justify-content-start">
         <div class="header__wrap align-items-center w-100 d-flex row">
 
@@ -78,13 +77,116 @@
                     </ul>
 
                     <div class="header__icons col-1 p-0 justify-content-end">
-                        <img class="header__icon" src="./img/cart.svg" alt="cart icon">
-                        <img class="header__icon" src="./img/avatar.svg" alt="avatar icon">
+                        <div class="dropdown">
+                            <div class="header__icon dropdown" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img src="./img/cart.svg" alt="cart icon">
+                                <span id="cart_badge" class="badge badge-pill badge-primary cart_badge">1</span>
+                            </div>
+                            <div id="dropdown-card" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <!-- <div>Apollo Eth #1289 NFT</div> -->
+                            </div>
+                        </div>
+                        <img class="header__icon" src="./img/avatar.svg" alt="avatar icon" data-toggle="modal"
+                            data-target="#LogInModal">
                     </div>
                 </div>
             </nav>
         </div>
     </header>
+
+    <div class="modal fade" id="LogInModal" tabindex="-1" role="dialog" aria-labelledby="LogInModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="LogInModalLabel">LogIn</h5> -->
+                    <ul class="nav nav-tabs" id="modalTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab"
+                                aria-controls="login" aria-selected="true">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="registration-tab" data-toggle="tab" href="#registration" role="tab"
+                                aria-controls="registration" aria-selected="false">Registration</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="text-white">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="tab-content" id="modalTabContent">
+                        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <form name="login" class="needs-validation" novalidate>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Name:</label>
+                                    <input type="text" class="form-control" id="recipient-name" placeholder="your name"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please write your name.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-password" class="col-form-label">Password:</label>
+                                    <input type="password" class="form-control" id="recipient-password"
+                                        placeholder="password" required>
+                                    <div class="invalid-feedback">
+                                        Please write password.
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn button">Log in</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="tab-pane fade" id="registration" role="tabpanel" aria-labelledby="registration-tab">
+                            <form name="registration" class="needs-validation" novalidate>
+                                <div class="form-group">
+                                    <label for="registration-name" class="col-form-label">Name:</label>
+                                    <input type="text" class="form-control" id="registration-name"
+                                        placeholder="your name" required>
+                                    <div class="invalid-feedback">
+                                        Please write your name.
+                                    </div>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="registration-password" class="col-form-label">Password:</label>
+                                    <input type="password" class="form-control" id="registration-password"
+                                        placeholder="password" required>
+                                    <div class="invalid-feedback">
+                                        Please write password.
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="registration-password-conf" class="col-form-label">Confirm
+                                        password:</label>
+                                    <input type="password" class="form-control" id="registration-password-conf"
+                                        placeholder="confirm password" required>
+                                    <div class="invalid-feedback">
+                                        Passwords must match.
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn button">Registration</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="hero container-fluid p-0" id="hero">
         <div class="hero__wrap container row">
@@ -127,9 +229,9 @@
                     <div>
                         <img class="hero__image" src="./img/hero.jpg" alt="main image">
                     </div>
-                    <div class="hero__personal-card personal-card col row">
+                    <div class="hero__personal-card personal__item personal-card col row">
                         <div class="col-xl-6 col-12 p-0">
-                            <h3 class="personal-card__profession">3D Abstract Hand</h3>
+                            <h3 class="personal-card__profession" id="personal-card__profession">3D Abstract Hand</h3>
                             <div class="person">
                                 <img class="person__avatar" src="./img/person/avatar_1.png" alt="person icon">
                                 <p class="person__nikname">@jhonartist</p>
@@ -170,6 +272,7 @@
                                 </button>
                             </div>
                         </div>
+                        <img class="personal-image visibility-hidden" src="./img/hero.jpg" alt="main image">
                     </div>
                 </div>
             </div>
@@ -206,13 +309,14 @@
 
             <div>
                 <ul class="top-slider top__list container-fluid p-0 m-0 row justify-content-between">
-                    <li class="top__item col-xl-12 p-0">
-                        <img src="./img/image_1.jpg" alt="image">
+                    <li class="top__item personal__item col-xl-12 p-0">
+                        <img class="personal-image" src="./img/image_1.jpg" alt="image">
 
 
                         <div class="personal-card col row mw-100 m-0 justify-content-between">
                             <div class="col-xl col-12 p-0">
-                                <h3 class="personal-card__profession">Apollo Eth #1289 NFT</h3>
+                                <h3 class="personal-card__profession" id="personal-card__profession">Apollo Eth #1289
+                                    NFT</h3>
                                 <div class="person">
                                     <img class="person__avatar" src="./img/person/avatar_01.png" alt="person icon">
                                     <p class="person__nikname">@jhonartist</p>
@@ -258,13 +362,14 @@
 
                     </li>
 
-                    <li class="top__item col-xl-12 p-0">
-                        <img src="./img/image_2.jpg" alt="image">
+                    <li class="top__item personal__item col-xl-12 p-0">
+                        <img class="personal-image" src="./img/image_2.jpg" alt="image">
 
 
                         <div class="personal-card col row mw-100 m-0 justify-content-between">
                             <div class="col-xl col-12 p-0">
-                                <h3 class="personal-card__profession">Sassy Bull #1169 Art</h3>
+                                <h3 class="personal-card__profession" id="personal-card__profession">Sassy Bull #1169
+                                    Art</h3>
                                 <div class="person">
                                     <img class="person__avatar" src="./img/person/avatar_2.png" alt="person icon">
                                     <p class="person__nikname">@jhonartist</p>
@@ -308,13 +413,14 @@
                         </div>
                     </li>
 
-                    <li class="top__item col-xl-12 p-0">
-                        <img src="./img/image_3.jpg" alt="image">
+                    <li class="top__item personal__item col-xl-12 p-0">
+                        <img class="personal-image" src="./img/image_3.jpg" alt="image">
 
 
                         <div class="personal-card col row mw-100 m-0 justify-content-between">
                             <div class="col-xl col-12 p-0">
-                                <h3 class="personal-card__profession">Satisfying 3D Art</h3>
+                                <h3 class="personal-card__profession" id="personal-card__profession">Satisfying 3D Art
+                                </h3>
                                 <div class="person">
                                     <img class="person__avatar" src="./img/person/avatar_3.png" alt="person icon">
                                     <p class="person__nikname">@jhonartist</p>
@@ -364,7 +470,7 @@
 
 
             <div class="explore_wrap d-flex align-items-center d-xl-none d-lg-none d-md-block">
-                <a class="d-flex explore align-items-center d-xl-none d-lg-none d-md-block" href="#">
+                <a class="d-flex explore align-items-end d-xl-none d-lg-none d-md-block" href="#">
                     <p class="m-0">Explore</p>
                     <img src="./img/arrow-right.png" alt="arrow">
                 </a>
@@ -385,26 +491,21 @@
                             aria-selected="true">Photography</button>
                     </li>
                     <li class="collections__item" role="presentation">
-                        <button class="collection-button" id="Brands-tab" data-bs-toggle="tab" data-bs-target="#Brands"
-                            type="button" role="tab" aria-controls="Brands" aria-selected="false">Brands</button>
-                    </li>
-                    <li class="collections__item" role="presentation">
-                        <button class="collection-button" id="Art-tab" data-bs-toggle="tab" data-bs-target="#Art"
-                            type="button" role="tab" aria-controls="Art" aria-selected="false">Art</button>
-                    </li>
-                    <li class="collections__item" role="presentation">
-                        <button class="collection-button" id="Brands-tab" data-bs-toggle="tab" data-bs-target="#Brands"
-                            type="button" role="tab" aria-controls="Brands" aria-selected="false">Brands</button>
-                    </li>
-
-                    <li class="collections__item" role="presentation">
                         <button class="collection-button" id="Sports-tab" data-bs-toggle="tab" data-bs-target="#Sports"
                             type="button" role="tab" aria-controls="Sports" aria-selected="false">Sports</button>
+                    </li>
+                    <li class="collections__item" role="presentation">
+                        <button class="collection-button" id="Brands-tab" data-bs-toggle="tab" data-bs-target="#Brands"
+                            type="button" role="tab" aria-controls="Brands" aria-selected="false">Brands</button>
                     </li>
                     <li class="collections__item" role="presentation">
                         <button class="collection-button" id="Collectibles-tab" data-bs-toggle="tab"
                             data-bs-target="#Collectibles" type="button" role="tab" aria-controls="Collectibles"
                             aria-selected="false">Collectibles</button>
+                    </li>
+                    <li class="collections__item" role="presentation">
+                        <button class="collection-button" id="Art-tab" data-bs-toggle="tab" data-bs-target="#Art"
+                            type="button" role="tab" aria-controls="Art" aria-selected="false">Art</button>
                     </li>
                     <li class="collections__item" role="presentation">
                         <button class="collection-button" id="Utility-tab" data-bs-toggle="tab"
@@ -412,13 +513,18 @@
                             aria-selected="false">Utility</button>
                     </li>
                     <li class="collections__item" role="presentation">
+                        <button class="collection-button" id="Brands-tab" data-bs-toggle="tab" data-bs-target="#Brands"
+                            type="button" role="tab" aria-controls="Brands" aria-selected="false">Brands</button>
+                    </li>
+
+                    <li class="collections__item" role="presentation">
                         <button class="collection-button" id="Collectibles-tab" data-bs-toggle="tab"
                             data-bs-target="#Collectibles" type="button" role="tab" aria-controls="Collectibles"
                             aria-selected="false">Collectibles</button>
                     </li>
                 </ul>
 
-                <a class="all-link d-flex align-items-center justify-content-end" href="#">
+                <a class="all-link d-flex align-items-end justify-content-end" href="#">
                     <p class="m-0">View all</p>
                     <img src="./img/arrow-right.png" alt="arrow">
                 </a>
@@ -566,7 +672,7 @@
             </ul>
 
             <div class="explore_wrap d-flex align-items-center d-xl-none d-lg-none d-md-block">
-                <a class="d-flex explore align-items-center d-xl-none d-lg-none d-md-block" href="#">
+                <a class="d-flex explore align-items-end d-xl-none d-lg-none d-md-block" href="#">
                     <p class="m-0">Explore</p>
                     <img src="./img/arrow-right.png" alt="arrow">
                 </a>
@@ -600,8 +706,8 @@
                             <img class="sellers__avatar" src="./img/person/person-avatar_1.png" alt="person avatar">
                             <div>
                                 <p class="sellers__name m-0">Eleanor Pena</p>
-                                <div class="d-flex">
-                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                <div class="d-flex align-items-center">
+                                    <img class="sellers__logo" src="./img/logo/logo_white.svg" alt="logo">
                                     <p class="mb-0 sellers__count">74875</p>
                                 </div>
                             </div>
@@ -617,8 +723,8 @@
                             <img class="sellers__avatar" src="./img/person/person-avatar_2.png" alt="person avatar">
                             <div>
                                 <p class="sellers__name m-0">Savannah Nguyen</p>
-                                <div class="d-flex">
-                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                <div class="d-flex align-items-center">
+                                    <img class="sellers__logo" src="./img/logo/logo_white.svg" alt="logo">
                                     <p class="mb-0 sellers__count">18599</p>
                                 </div>
                             </div>
@@ -634,8 +740,8 @@
                             <img class="sellers__avatar" src="./img/person/person-avatar_3.png" alt="person avatar">
                             <div>
                                 <p class="sellers__name m-0">Arlene McCoy</p>
-                                <div class="d-flex">
-                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                <div class="d-flex align-items-center">
+                                    <img class="sellers__logo" src="./img/logo/logo_white.svg" alt="logo">
                                     <p class="mb-0 sellers__count">45904</p>
                                 </div>
                             </div>
@@ -652,8 +758,8 @@
                             <img class="sellers__avatar" src="./img/person/person-avatar_4.png" alt="person avatar">
                             <div>
                                 <p class="sellers__name m-0">Esther Howard</p>
-                                <div class="d-flex">
-                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                <div class="d-flex align-items-center">
+                                    <img class="sellers__logo" src="./img/logo/logo_white.svg" alt="logo">
                                     <p class="mb-0 sellers__count">16627</p>
                                 </div>
                             </div>
@@ -669,8 +775,8 @@
                             <img class="sellers__avatar" src="./img/person/person-avatar_5.png" alt="person avatar">
                             <div>
                                 <p class="sellers__name m-0">Robert Fox</p>
-                                <div class="d-flex">
-                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                <div class="d-flex align-items-center">
+                                    <img class="sellers__logo" src="./img/logo/logo_white.svg" alt="logo">
                                     <p class="mb-0 sellers__count">9631</p>
                                 </div>
                             </div>
@@ -686,8 +792,8 @@
                             <img class="sellers__avatar" src="./img/person/person-avatar_6.png" alt="person avatar">
                             <div>
                                 <p class="sellers__name m-0">Darlene Robertson</p>
-                                <div class="d-flex">
-                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                <div class="d-flex align-items-center">
+                                    <img class="sellers__logo" src="./img/logo/logo_white.svg" alt="logo">
                                     <p class="mb-0 sellers__count">70443</p>
                                 </div>
                             </div>
@@ -705,8 +811,8 @@
                             <img class="sellers__avatar" src="./img/person/person-avatar_7.png" alt="person avatar">
                             <div>
                                 <p class="sellers__name m-0">Jacob Jones</p>
-                                <div class="d-flex">
-                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                <div class="d-flex align-items-center">
+                                    <img class="sellers__logo" src="./img/logo/logo_white.svg" alt="logo">
                                     <p class="mb-0 sellers__count">13671</p>
                                 </div>
                             </div>
@@ -722,8 +828,8 @@
                             <img class="sellers__avatar" src="./img/person/person-avatar_8.png" alt="person avatar">
                             <div>
                                 <p class="sellers__name m-0">Jerome Bell</p>
-                                <div class="d-flex">
-                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                <div class="d-flex align-items-center">
+                                    <img class="sellers__logo" src="./img/logo/logo_white.svg" alt="logo">
                                     <p class="mb-0 sellers__count">39235</p>
                                 </div>
                             </div>
@@ -739,8 +845,8 @@
                             <img class="sellers__avatar" src="./img/person/person-avatar_9.png" alt="person avatar">
                             <div>
                                 <p class="sellers__name m-0">Wade Warren</p>
-                                <div class="d-flex">
-                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                <div class="d-flex align-items-center">
+                                    <img class="sellers__logo" src="./img/logo/logo_white.svg" alt="logo">
                                     <p class="mb-0 sellers__count">43359</p>
                                 </div>
                             </div>
@@ -756,8 +862,8 @@
                             <img class="sellers__avatar" src="./img/person/person-avatar_10.png" alt="person avatar">
                             <div>
                                 <p class="sellers__name m-0">Jane Cooper</p>
-                                <div class="d-flex">
-                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                <div class="d-flex align-items-center">
+                                    <img class="sellers__logo" src="./img/logo/logo_white.svg" alt="logo">
                                     <p class="mb-0 sellers__count">95554</p>
                                 </div>
                             </div>
@@ -773,8 +879,8 @@
                             <img class="sellers__avatar" src="./img/person/person-avatar_11.png" alt="person avatar">
                             <div>
                                 <p class="sellers__name m-0">Kristin Watson</p>
-                                <div class="d-flex">
-                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                <div class="d-flex align-items-center">
+                                    <img class="sellers__logo" src="./img/logo/logo_white.svg" alt="logo">
                                     <p class="mb-0 sellers__count">20796</p>
                                 </div>
                             </div>
@@ -790,8 +896,8 @@
                             <img class="sellers__avatar" src="./img/person/person-avatar_12.png" alt="person avatar">
                             <div>
                                 <p class="sellers__name m-0">Kathryn Murphy</p>
-                                <div class="d-flex">
-                                    <img src="./img/logo/logo_white.svg" alt="logo">
+                                <div class="d-flex align-items-center">
+                                    <img class="sellers__logo" src="./img/logo/logo_white.svg" alt="logo">
                                     <p class="mb-0 sellers__count">4339</p>
                                 </div>
                             </div>
@@ -806,7 +912,7 @@
                     all</button>
 
                 <div class="explore_wrap d-flex align-items-center d-xl-none d-lg-none d-md-block">
-                    <a class="d-flex explore align-items-center d-xl-none d-lg-none d-md-block d-sm-block d-block"
+                    <a class="d-flex explore align-items-end d-xl-none d-lg-none d-md-block d-sm-block d-block"
                         href="#">
                         <p class="m-0">Explore</p>
                         <img src="./img/arrow-right.png" alt="arrow">
