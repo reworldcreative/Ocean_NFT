@@ -56,10 +56,12 @@ $(document).ready(function () {
           if (!(password.value === passwordconf.value)) {
             event.preventDefault();
             event.stopPropagation();
-            passwordconf.setCustomValidity("invalid");
+            // passwordconf.setCustomValidity("invalid");
+            passwordconf.classList.add("is-invalid");
           }
         }
-        if (password.value === passwordconf.value) {
+
+        if (password.value === passwordconf.value && form.checkValidity()) {
           passwordconf.setCustomValidity("");
           form.submit();
         }
