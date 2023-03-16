@@ -570,6 +570,9 @@ body {
 .explore > p {
   display: contents;
 }
+.explore:hover {
+  color: #ff56f6;
+}
 
 .top .slick-track {
   justify-content: space-between;
@@ -1028,7 +1031,7 @@ body {
   border-radius: 0px 5.5273px 5.5273px 0px;
 }
 .subscribe__button_wrap {
-  background: linear-gradient(45deg, rgb(255, 166, 250) 43%, rgb(60, 121, 212) 100%);
+  background: linear-gradient(250deg, rgb(255, 166, 250) 43%, rgb(60, 121, 212) 100%);
   border: none;
   padding: 2px;
   margin-left: 8.8px;
@@ -1169,6 +1172,9 @@ body {
 }
 .accordion__card:last-child {
   border: none;
+}
+.accordion__card:last-child .card-header {
+  padding-bottom: 0px;
 }
 .accordion .card-header {
   background-color: transparent;
@@ -1856,7 +1862,7 @@ body {
 }
 @media screen and (max-width: 450px) {
   .persons .slick-list {
-    padding: 0 20% 0 0 !important;
+    padding: 0 10% 0 0 !important;
   }
   .persons__item {
     padding: 70px 13px 28px !important;
@@ -1880,6 +1886,9 @@ body {
   }
 }
 @media screen and (max-width: 375px) {
+  .hero__wrap {
+    padding: 45px 25px 0px 25px;
+  }
   .hero .personal-card::after {
     border: none;
     background-size: contain;
@@ -1903,17 +1912,29 @@ body {
   .top__wrap {
     margin: 50px 0% 0px 7.5%;
   }
+  .top .section-top {
+    margin-bottom: 32px;
+  }
   .top .personal-card__button {
     padding: 7px 9px 10px;
   }
   .top .personal-card__button_wrap {
     margin-top: 24px;
   }
+  .collections .section-title {
+    margin-bottom: 26px;
+  }
+  .collections__first-col {
+    margin-top: 0px;
+  }
   .collections__item:nth-child(odd) {
     margin-right: 0px;
   }
   .collections .all-link {
     margin-right: 0px;
+  }
+  .persons .section-top {
+    margin-bottom: 30px;
   }
   .persons__item {
     max-width: 50% !important;
@@ -1924,9 +1945,19 @@ body {
   .persons .stats__item {
     margin-right: 10px;
   }
+  .persons .person__name {
+    line-height: 1;
+  }
   .sellers__item {
     width: 316px;
     padding: 15px 12px;
+  }
+  .sellers__logo {
+    width: 6.14px;
+    height: 9.97px;
+  }
+  .sellers__text {
+    margin-top: 17px;
   }
   .sellers__number {
     font-size: 13px;
@@ -1940,18 +1971,36 @@ body {
     line-height: normal;
   }
   .sellers__count {
-    font-size: 8.5px;
+    font-size: 9.97186px;
+    line-height: 321%;
   }
   .sellers__income {
     font-size: 10.6px;
     line-height: 2;
     padding: 5px 10px;
   }
+  .sellers__container {
+    margin-top: 40px;
+  }
+  .about .section-title {
+    margin-bottom: 11px;
+  }
+  .about__text {
+    margin-bottom: 26px;
+  }
   .subscribe__input {
     width: 100%;
+    font-size: 10.2162px;
+    line-height: 1.8;
   }
   .subscribe__image {
     height: 380px;
+  }
+  .subscribe__button_wrap {
+    margin-left: 5.84px;
+  }
+  .footer__list-second {
+    justify-content: space-around !important;
   }
 }
 @media screen and (max-width: 374px) {

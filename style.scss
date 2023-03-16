@@ -800,6 +800,10 @@ body {
   > p {
     display: contents;
   }
+
+  &:hover {
+    color: #ff56f6;
+  }
 }
 
 .top {
@@ -1444,7 +1448,7 @@ body {
 
     &_wrap {
       background: linear-gradient(
-        45deg,
+        250deg,
         rgba(255, 166, 250, 1) 43%,
         rgba(60, 121, 212, 1) 100%
       );
@@ -1632,6 +1636,9 @@ body {
 
   &__card:last-child {
     border: none;
+    .card-header {
+      padding-bottom: 0px;
+    }
   }
 
   .card-header {
@@ -2644,7 +2651,7 @@ body {
 @media screen and (max-width: 450px) {
   .persons {
     .slick-list {
-      padding: 0 20% 0 0 !important;
+      padding: 0 10% 0 0 !important;
     }
 
     &__item {
@@ -2684,6 +2691,10 @@ body {
 
 @media screen and (max-width: 375px) {
   .hero {
+    &__wrap {
+      padding: 45px 25px 0px 25px;
+    }
+
     .personal-card {
       &::after {
         border: none;
@@ -2733,6 +2744,11 @@ body {
       // margin: 50px 6% 0px 7.5%;
       margin: 50px 0% 0px 7.5%;
     }
+
+    .section-top {
+      margin-bottom: 32px;
+    }
+
     .personal-card {
       // justify-content: center !important;
       &__button {
@@ -2746,6 +2762,14 @@ body {
   }
 
   .collections {
+    .section-title {
+      margin-bottom: 26px;
+    }
+
+    &__first-col {
+      margin-top: 0px;
+    }
+
     &__item {
       &:nth-child(odd) {
         margin-right: 0px;
@@ -2764,6 +2788,10 @@ body {
   }
 
   .persons {
+    .section-top {
+      margin-bottom: 30px;
+    }
+
     &__item {
       max-width: 50% !important;
     }
@@ -2777,12 +2805,27 @@ body {
         margin-right: 10px;
       }
     }
+
+    .person {
+      &__name {
+        line-height: 1;
+      }
+    }
   }
 
   .sellers {
     &__item {
       width: 316px;
       padding: 15px 12px;
+    }
+
+    &__logo {
+      width: 6.14px;
+      height: 9.97px;
+    }
+
+    &__text {
+      margin-top: 17px;
     }
 
     &__number {
@@ -2800,7 +2843,9 @@ body {
     }
 
     &__count {
-      font-size: 8.5px;
+      // font-size: 8.5px;
+      font-size: 9.97186px;
+      line-height: 321%;
     }
 
     &__income {
@@ -2808,15 +2853,40 @@ body {
       line-height: 2;
       padding: 5px 10px;
     }
+
+    &__container {
+      margin-top: 40px;
+    }
+  }
+
+  .about {
+    .section-title {
+      margin-bottom: 11px;
+    }
+    &__text {
+      margin-bottom: 26px;
+    }
   }
 
   .subscribe {
     &__input {
       width: 100%;
+      font-size: 10.2162px;
+      line-height: 1.8;
     }
 
     &__image {
       height: 380px;
+    }
+
+    &__button_wrap {
+      margin-left: 5.84px;
+    }
+  }
+
+  .footer {
+    &__list-second {
+      justify-content: space-around !important;
     }
   }
 }
