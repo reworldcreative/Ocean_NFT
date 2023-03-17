@@ -3102,6 +3102,13 @@ body {
 
 @media screen and (max-width: 360px) {
   .hero {
+    .personal-card {
+      &::after {
+        background: none;
+        border: 2px solid #76767630;
+      }
+    }
+
     &__button {
       padding: 9px 15px 11px;
       img {
@@ -3114,7 +3121,7 @@ body {
       max-width: 100%;
       display: grid;
       justify-content: center;
-      clip-path: polygon(25% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
+      clip-path: polygon(26% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
     }
     .partners {
       &__list {

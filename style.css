@@ -2124,6 +2124,10 @@ body {
   }
 }
 @media screen and (max-width: 360px) {
+  .hero .personal-card::after {
+    background: none;
+    border: 2px solid rgba(118, 118, 118, 0.1882352941);
+  }
   .hero__button {
     padding: 9px 15px 11px;
   }
@@ -2135,8 +2139,8 @@ body {
     max-width: 100%;
     display: grid;
     justify-content: center;
-    -webkit-clip-path: polygon(25% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
-            clip-path: polygon(25% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
+    -webkit-clip-path: polygon(26% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
+            clip-path: polygon(26% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
   }
   .hero .partners__list {
     gap: 20px;
