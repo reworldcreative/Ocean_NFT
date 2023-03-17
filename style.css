@@ -2091,6 +2091,9 @@ body {
   }
 }
 @media screen and (max-width: 374px) {
+  .hero .personal-card::after {
+    background-size: cover;
+  }
   .hero .partners__list {
     gap: 10px;
   }
@@ -2132,6 +2135,8 @@ body {
     max-width: 100%;
     display: grid;
     justify-content: center;
+    -webkit-clip-path: polygon(25% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
+            clip-path: polygon(25% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
   }
   .hero .partners__list {
     gap: 20px;
@@ -2141,6 +2146,12 @@ body {
   }
   .top .personal-card {
     padding: 24.87px 6px 18px;
+  }
+  .top__wrap {
+    margin: 100px 0% 0px 7.5%;
+  }
+  .about .section-title {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 300px) {

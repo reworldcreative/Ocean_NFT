@@ -1949,6 +1949,11 @@ body {
       margin: 166px 6% 0px 7.5%;
       // margin: 166px 0% 0px 7.5%;
     }
+
+    // .slick-list {
+    //   overflow: visible;
+    // }
+
     .personal-card {
       padding: 24.87px 19px 18px 17px;
 
@@ -3042,6 +3047,9 @@ body {
 
 @media screen and (max-width: 374px) {
   .hero {
+    .personal-card::after {
+      background-size: cover;
+    }
     .partners {
       &__list {
         gap: 10px;
@@ -3106,6 +3114,7 @@ body {
       max-width: 100%;
       display: grid;
       justify-content: center;
+      clip-path: polygon(25% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
     }
     .partners {
       &__list {
@@ -3125,6 +3134,16 @@ body {
         // justify-content: center;
         // display: grid;
       }
+    }
+
+    &__wrap {
+      margin: 100px 0% 0px 7.5%;
+    }
+  }
+
+  .about {
+    .section-title {
+      font-size: 18px;
     }
   }
 }
