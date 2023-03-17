@@ -1611,6 +1611,9 @@ body {
   .persons .person__photo {
     width: 112.52px;
   }
+  .collections .tab-content {
+    max-width: 25%;
+  }
   .sellers .section-title {
     font-size: 19.2314px;
     line-height: 1.248;
