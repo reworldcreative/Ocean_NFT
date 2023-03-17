@@ -1706,6 +1706,12 @@ body {
     width: 10px;
     height: 16px;
   }
+  .collections__wrap {
+    margin: 100px 9% 0px 6.81%;
+  }
+  .persons__wrap {
+    margin: 70px 0px 0px 30px;
+  }
   .collections__first-col {
     max-width: 100%;
   }

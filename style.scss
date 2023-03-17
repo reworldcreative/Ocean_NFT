@@ -2432,6 +2432,19 @@ body {
     width: 10px;
     height: 16px;
   }
+
+  .collections {
+    &__wrap {
+      margin: 100px 9% 0px 6.81%;
+    }
+  }
+
+  .persons {
+    &__wrap {
+      margin: 70px 0px 0px 30px;
+    }
+  }
+
   .collections {
     &__first-col {
       max-width: 100%;
