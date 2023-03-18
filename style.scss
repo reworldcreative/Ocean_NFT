@@ -1120,6 +1120,7 @@ body {
       font-weight: 500;
       font-size: 24.3201px;
       // line-height: 189%;
+      line-height: 0.7;
     }
 
     &__nikname {
@@ -1127,6 +1128,7 @@ body {
       font-size: 20.1601px;
       margin-right: 1.9px !important;
       // line-height: 229%;
+      line-height: 2.3;
 
       color: #ffb1ee;
     }
@@ -1179,7 +1181,8 @@ body {
     &_wrap {
       max-width: fit-content;
       padding: 2px;
-      margin-top: 48.83px;
+      // margin-top: 48.83px;
+      margin-top: 40px;
       background-image: linear-gradient(
         276deg,
         #ff56f6 21.43%,
@@ -1427,6 +1430,7 @@ body {
     font-weight: 700;
     font-size: 39.7965px;
     line-height: 1.256;
+    // line-height: 1.7;
     margin-bottom: 27.64px;
   }
 
@@ -1502,7 +1506,8 @@ body {
 .footer {
   &__wrap {
     margin: 0px 11.1% 0px 5.18%;
-    padding: 96px 0px 86px;
+    // padding: 96px 0px 86px;
+    padding: 96px 0px 75px;
     border-top: solid 1.11px rgba(255, 255, 255, 0.2);
     border-bottom: solid 1.11px rgba(255, 255, 255, 0.2);
   }
@@ -1562,6 +1567,7 @@ body {
   &__list {
     list-style: none;
     width: 177px;
+    margin-bottom: 0px;
     // margin-right: 33px;
   }
 
@@ -1783,6 +1789,10 @@ body {
       .footer__item:last-child {
         margin-right: 0px;
       }
+    }
+
+    &__second-col {
+      justify-content: space-around;
     }
   }
 }
@@ -2265,7 +2275,8 @@ body {
       font-weight: 700;
       font-size: 42px;
       line-height: 137.4%;
-      margin-bottom: 40px;
+      // margin-bottom: 40px;
+      margin-bottom: 33px;
     }
     .partners {
       &__list {
@@ -2501,9 +2512,27 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+  .top {
+    &__wrap {
+      margin: 166px 0% 0px 0%;
+    }
+    .section-top {
+      margin-left: 5%;
+    }
+  }
+
   .sellers {
     &__item:nth-child(n + 5) {
       display: none !important;
+    }
+  }
+
+  .persons {
+    &__wrap {
+      margin: 70px 0px 0px 0px;
+    }
+    .section-top {
+      margin-left: 30px;
     }
   }
 }
@@ -2555,7 +2584,8 @@ body {
     &__text {
       font-size: 14px;
       line-height: 1.64;
-      margin-bottom: 40px;
+      // margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     &__sub-text {
@@ -2616,7 +2646,7 @@ body {
 
   .top {
     &__wrap {
-      margin: 108.21px 0% 0px 7.5%;
+      margin: 108.21px 0% 0px 0%;
     }
   }
 
@@ -2844,12 +2874,24 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+  .header {
+    .logo {
+      font-size: 16.1279px;
+      line-height: 1.25;
+    }
+  }
+
   .hero {
     &__wrap {
-      padding: 45px 25px 0px 25px;
+      padding: 56px 30px 0px 30px;
+
+      > div:first-child {
+        margin-right: 0%;
+      }
     }
 
     .personal-card {
+      top: -60px;
       &::after {
         border: none;
         background-size: contain;
@@ -2896,7 +2938,17 @@ body {
   .top {
     &__wrap {
       // margin: 50px 6% 0px 7.5%;
-      margin: 50px 0% 0px 7.5%;
+      // margin: 108px 0% 0px 7.5%;
+      margin: 108px 0% 0px 0%;
+    }
+
+    .slick-list {
+      padding: 0 10% 0 0 !important;
+    }
+
+    &__item {
+      width: 304px !important;
+      margin-right: 0px;
     }
 
     .section-top {
@@ -2947,7 +2999,12 @@ body {
     }
 
     &__item {
-      max-width: 50% !important;
+      // max-width: 50% !important;
+      max-width: 303px !important;
+    }
+
+    .slick-list {
+      padding: 0 10% 0 5% !important;
     }
 
     .slick-track {

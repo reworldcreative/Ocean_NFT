@@ -779,11 +779,13 @@ body {
 .persons .person__name {
   font-weight: 500;
   font-size: 24.3201px;
+  line-height: 0.7;
 }
 .persons .person__nikname {
   font-weight: 400;
   font-size: 20.1601px;
   margin-right: 1.9px !important;
+  line-height: 2.3;
   color: #ffb1ee;
 }
 .persons .stats {
@@ -817,7 +819,7 @@ body {
   max-width: -moz-fit-content;
   max-width: fit-content;
   padding: 2px;
-  margin-top: 48.83px;
+  margin-top: 40px;
   background-image: linear-gradient(276deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%);
 }
 
@@ -1053,7 +1055,7 @@ body {
 
 .footer__wrap {
   margin: 0px 11.1% 0px 5.18%;
-  padding: 96px 0px 86px;
+  padding: 96px 0px 75px;
   border-top: solid 1.11px rgba(255, 255, 255, 0.2);
   border-bottom: solid 1.11px rgba(255, 255, 255, 0.2);
 }
@@ -1105,6 +1107,7 @@ body {
 .footer__list {
   list-style: none;
   width: 177px;
+  margin-bottom: 0px;
 }
 .footer .last .footer__list {
   width: -moz-fit-content;
@@ -1269,6 +1272,9 @@ body {
   }
   .footer .last .footer__item:last-child {
     margin-right: 0px;
+  }
+  .footer__second-col {
+    justify-content: space-around;
   }
 }
 @media screen and (max-width: 1520px) {
@@ -1588,7 +1594,7 @@ body {
     font-weight: 700;
     font-size: 42px;
     line-height: 137.4%;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
   .hero .partners__list {
     gap: 25px;
@@ -1740,8 +1746,20 @@ body {
   }
 }
 @media screen and (max-width: 700px) {
+  .top__wrap {
+    margin: 166px 0% 0px 0%;
+  }
+  .top .section-top {
+    margin-left: 5%;
+  }
   .sellers__item:nth-child(n+5) {
     display: none !important;
+  }
+  .persons__wrap {
+    margin: 70px 0px 0px 0px;
+  }
+  .persons .section-top {
+    margin-left: 30px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -1770,7 +1788,7 @@ body {
   .hero__text {
     font-size: 14px;
     line-height: 1.64;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .hero__sub-text {
     margin-left: 19.69px;
@@ -1818,7 +1836,7 @@ body {
     right: -30px;
   }
   .top__wrap {
-    margin: 108.21px 0% 0px 7.5%;
+    margin: 108.21px 0% 0px 0%;
   }
   .partners img {
     width: 143px;
@@ -1973,8 +1991,18 @@ body {
   }
 }
 @media screen and (max-width: 375px) {
+  .header .logo {
+    font-size: 16.1279px;
+    line-height: 1.25;
+  }
   .hero__wrap {
-    padding: 45px 25px 0px 25px;
+    padding: 56px 30px 0px 30px;
+  }
+  .hero__wrap > div:first-child {
+    margin-right: 0%;
+  }
+  .hero .personal-card {
+    top: -60px;
   }
   .hero .personal-card::after {
     border: none;
@@ -1997,7 +2025,14 @@ body {
     line-height: 1;
   }
   .top__wrap {
-    margin: 50px 0% 0px 7.5%;
+    margin: 108px 0% 0px 0%;
+  }
+  .top .slick-list {
+    padding: 0 10% 0 0 !important;
+  }
+  .top__item {
+    width: 304px !important;
+    margin-right: 0px;
   }
   .top .section-top {
     margin-bottom: 32px;
@@ -2024,7 +2059,10 @@ body {
     margin-bottom: 30px;
   }
   .persons__item {
-    max-width: 50% !important;
+    max-width: 303px !important;
+  }
+  .persons .slick-list {
+    padding: 0 10% 0 5% !important;
   }
   .persons .slick-track {
     display: block;
