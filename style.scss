@@ -2736,16 +2736,11 @@ body {
   }
 
   .navigation {
-    &__list {
-      margin: 10px auto;
-      display: block;
-    }
     &__item {
-      margin-right: 0px;
-      margin-bottom: 10px;
+      margin-right: 10px;
     }
     &__item:last-child {
-      margin-bottom: 0px;
+      margin-right: 0px;
     }
   }
 
@@ -2890,11 +2885,22 @@ body {
       }
     }
 
+    &__image {
+      max-width: 120%;
+      height: 511.79px;
+      clip-path: polygon(0 10%, 15% 0, 85% 0, 85% 80%, 70% 100%, 0 100%);
+    }
+    &__col-logo {
+      > div {
+        overflow-x: clip;
+      }
+    }
+
     .personal-card {
-      top: -60px;
+      top: -180px;
       &::after {
         border: none;
-        background-size: contain;
+        background-size: cover;
       }
       > div:first-child {
         margin-right: 0px;
@@ -2910,8 +2916,8 @@ body {
       // clip-path: polygon(0% 0%, 75% 0%, 100% 0, 100% 100%, 0 100%, 0 19%);
 
       &__button {
-        font-size: 15px;
-        padding: 3px;
+        // font-size: 15px;
+        // padding: 3px;
         img {
           margin-left: 5px;
         }
@@ -2977,6 +2983,7 @@ body {
     }
 
     &__item {
+      margin-bottom: 17.8px;
       &:nth-child(odd) {
         margin-right: 0px;
       }
@@ -2994,8 +3001,15 @@ body {
   }
 
   .persons {
+    &__wrap {
+      margin: 108px 0px 0px 0px;
+    }
     .section-top {
       margin-bottom: 30px;
+    }
+
+    .explore_wrap {
+      margin-top: 43px;
     }
 
     &__item {
@@ -3071,6 +3085,7 @@ body {
   }
 
   .about {
+    max-height: 500px;
     .section-title {
       margin-bottom: 11px;
     }
@@ -3098,6 +3113,14 @@ body {
   .footer {
     &__list-second {
       justify-content: space-around !important;
+    }
+
+    .accordion {
+      &__card:first-child {
+        .card-header {
+          padding-top: 0px;
+        }
+      }
     }
   }
 }
@@ -3191,6 +3214,9 @@ body {
   }
 
   .top {
+    .slick-slide {
+      margin-right: 20px;
+    }
     .personal-card {
       padding: 24.87px 6px 18px;
       > div {
@@ -3201,7 +3227,7 @@ body {
     }
 
     &__wrap {
-      margin: 100px 0% 0px 7.5%;
+      margin: 180px 0% 0px 7.5%;
     }
   }
 
@@ -3213,6 +3239,20 @@ body {
 }
 
 @media screen and (max-width: 300px) {
+  .navigation {
+    &__list {
+      margin: 10px auto;
+      display: block;
+    }
+    &__item {
+      margin-right: 0px;
+      margin-bottom: 10px;
+    }
+    &__item:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
   .hero {
     .partners {
       &__list {

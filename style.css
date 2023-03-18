@@ -1897,16 +1897,11 @@ body {
   .top .slick-list {
     padding: 0 15% 0 0 !important;
   }
-  .navigation__list {
-    margin: 10px auto;
-    display: block;
-  }
   .navigation__item {
-    margin-right: 0px;
-    margin-bottom: 10px;
+    margin-right: 10px;
   }
   .navigation__item:last-child {
-    margin-bottom: 0px;
+    margin-right: 0px;
   }
   .personal-card {
     margin: 0;
@@ -2001,19 +1996,24 @@ body {
   .hero__wrap > div:first-child {
     margin-right: 0%;
   }
+  .hero__image {
+    max-width: 120%;
+    height: 511.79px;
+    -webkit-clip-path: polygon(0 10%, 15% 0, 85% 0, 85% 80%, 70% 100%, 0 100%);
+            clip-path: polygon(0 10%, 15% 0, 85% 0, 85% 80%, 70% 100%, 0 100%);
+  }
+  .hero__col-logo > div {
+    overflow-x: clip;
+  }
   .hero .personal-card {
-    top: -60px;
+    top: -180px;
   }
   .hero .personal-card::after {
     border: none;
-    background-size: contain;
+    background-size: cover;
   }
   .hero .personal-card > div:first-child {
     margin-right: 0px;
-  }
-  .hero .personal-card__button {
-    font-size: 15px;
-    padding: 3px;
   }
   .hero .personal-card__button img {
     margin-left: 5px;
@@ -2049,14 +2049,23 @@ body {
   .collections__first-col {
     margin-top: 0px;
   }
+  .collections__item {
+    margin-bottom: 17.8px;
+  }
   .collections__item:nth-child(odd) {
     margin-right: 0px;
   }
   .collections .all-link {
     margin-right: 0px;
   }
+  .persons__wrap {
+    margin: 108px 0px 0px 0px;
+  }
   .persons .section-top {
     margin-bottom: 30px;
+  }
+  .persons .explore_wrap {
+    margin-top: 43px;
   }
   .persons__item {
     max-width: 303px !important;
@@ -2107,6 +2116,9 @@ body {
   .sellers__container {
     margin-top: 40px;
   }
+  .about {
+    max-height: 500px;
+  }
   .about .section-title {
     margin-bottom: 11px;
   }
@@ -2126,6 +2138,9 @@ body {
   }
   .footer__list-second {
     justify-content: space-around !important;
+  }
+  .footer .accordion__card:first-child .card-header {
+    padding-top: 0px;
   }
 }
 @media screen and (max-width: 374px) {
@@ -2186,17 +2201,31 @@ body {
   .hero .partners img {
     width: 100%;
   }
+  .top .slick-slide {
+    margin-right: 20px;
+  }
   .top .personal-card {
     padding: 24.87px 6px 18px;
   }
   .top__wrap {
-    margin: 100px 0% 0px 7.5%;
+    margin: 180px 0% 0px 7.5%;
   }
   .about .section-title {
     font-size: 18px;
   }
 }
 @media screen and (max-width: 300px) {
+  .navigation__list {
+    margin: 10px auto;
+    display: block;
+  }
+  .navigation__item {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .navigation__item:last-child {
+    margin-bottom: 0px;
+  }
   .hero .partners__list {
     justify-content: center;
   }
