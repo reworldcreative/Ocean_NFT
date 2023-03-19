@@ -1413,7 +1413,7 @@ body {
     width: 45%;
   }
   .persons .slick-list {
-    padding: 0 10% 0 0 !important;
+    padding: 0 11% 0 0 !important;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -1462,6 +1462,9 @@ body {
   }
   .persons__wrap {
     margin: 108px 6% 0px 7.5%;
+  }
+  .persons .slick-list {
+    padding: 0 20% 0 0 !important;
   }
   .persons__item {
     padding: 70px 27px 28px !important;
@@ -1543,6 +1546,9 @@ body {
   .top .personal-card > div:first-child {
     margin-right: 10px;
   }
+  .persons .slick-list {
+    padding: 0 10% 0 0 !important;
+  }
 }
 @media screen and (max-width: 991px) {
   .top .personal-card__profession {
@@ -1609,6 +1615,9 @@ body {
   .partners__list {
     justify-content: space-between;
   }
+  .sellers__name {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 900px) {
   .collections__image {
@@ -1631,7 +1640,7 @@ body {
 }
 @media screen and (max-width: 830px) {
   .persons .slick-list {
-    padding: 0 35% 0 0 !important;
+    padding: 0 53% 0 0 !important;
   }
   .collections__list {
     margin-right: 0px;
@@ -1643,6 +1652,9 @@ body {
 @media screen and (max-width: 800px) {
   .header__wrap {
     margin: 42px 7.5% 0px 6.2%;
+  }
+  .persons .slick-list {
+    padding: 0 40% 0 0 !important;
   }
   .hero__wrap {
     max-width: 100%;
@@ -2022,7 +2034,7 @@ body {
 }
 @media screen and (max-width: 450px) {
   .persons .slick-list {
-    padding: 0 10% 0 0 !important;
+    padding: 0 30% 0 0 !important;
   }
   .persons__item {
     padding: 70px 13px 28px !important;
@@ -2237,9 +2249,43 @@ body {
   }
 }
 @media screen and (max-width: 360px) {
+  .navigation__list {
+    margin: 10px auto;
+    display: block;
+  }
+  .navigation__item {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .navigation__item:last-child {
+    margin-bottom: 0px;
+  }
+  .navigation__link {
+    font-size: 15px;
+  }
+  .hero .personal-card {
+    top: -130px;
+    -webkit-clip-path: polygon(16% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
+            clip-path: polygon(16% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
+  }
   .hero .personal-card::after {
     background: none;
     border: 2px solid rgba(118, 118, 118, 0.1882352941);
+  }
+  .hero .personal-card__profession {
+    font-size: 15px;
+  }
+  .hero .personal-card .person__nikname {
+    font-size: 11px;
+  }
+  .hero .personal-card .price__eth {
+    font-size: 8px;
+  }
+  .hero .personal-card .price__dollar {
+    font-size: 9px;
+  }
+  .hero .personal-card__button {
+    font-size: 12px;
   }
   .hero__button {
     padding: 9px 15px 11px;
@@ -2250,13 +2296,15 @@ body {
   }
   .hero__personal-card {
     max-width: 100%;
-    display: grid;
-    justify-content: center;
+    padding: 27.64px 15px 17.69px 15px;
     -webkit-clip-path: polygon(26% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
             clip-path: polygon(26% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
   }
   .hero .partners__list {
     gap: 20px;
+  }
+  .hero .partners__item {
+    max-width: 40%;
   }
   .hero .partners img {
     width: 100%;
@@ -2273,21 +2321,20 @@ body {
   .about .section-title {
     font-size: 18px;
   }
+  .subscribe__image {
+    height: 280px;
+  }
 }
 @media screen and (max-width: 300px) {
-  .navigation__list {
-    margin: 10px auto;
-    display: block;
-  }
-  .navigation__item {
-    margin-right: 0px;
-    margin-bottom: 10px;
-  }
-  .navigation__item:last-child {
-    margin-bottom: 0px;
-  }
-  .hero .partners__list {
+  .hero__personal-card {
+    display: grid;
     justify-content: center;
+  }
+  .hero .statistic__title {
+    font-size: 15px;
+  }
+  .top .personal-card {
+    justify-content: center !important;
   }
   .collections__list {
     display: block;
@@ -2317,7 +2364,16 @@ body {
     flex-wrap: wrap;
     gap: 10px;
   }
+  .subscribe .section-title {
+    font-size: 20px;
+  }
   .subscribe__button {
     margin-left: 0px;
+  }
+  .footer .accordion__item {
+    padding: 10px 0px 0px;
+  }
+  .footer .accordion__item:first-child {
+    padding: 0px;
   }
 }/*# sourceMappingURL=style.css.map */

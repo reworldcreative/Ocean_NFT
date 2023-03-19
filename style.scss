@@ -1980,7 +1980,7 @@ body {
 
   .persons {
     .slick-list {
-      padding: 0 10% 0 0 !important;
+      padding: 0 11% 0 0 !important;
     }
   }
 }
@@ -2058,6 +2058,10 @@ body {
     &__wrap {
       margin: 108px 6% 0px 7.5%;
       // margin: 108px 0% 0px 7.5%;
+    }
+
+    .slick-list {
+      padding: 0 20% 0 0 !important;
     }
 
     &__item {
@@ -2171,6 +2175,12 @@ body {
       }
     }
   }
+
+  .persons {
+    .slick-list {
+      padding: 0 10% 0 0 !important;
+    }
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -2279,6 +2289,12 @@ body {
       justify-content: space-between;
     }
   }
+
+  .sellers {
+    &__name {
+      font-size: 15px;
+    }
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -2310,7 +2326,7 @@ body {
 @media screen and (max-width: 830px) {
   .persons {
     .slick-list {
-      padding: 0 35% 0 0 !important;
+      padding: 0 53% 0 0 !important;
     }
   }
 
@@ -2329,6 +2345,12 @@ body {
   .header {
     &__wrap {
       margin: 42px 7.5% 0px 6.2%;
+    }
+  }
+
+  .persons {
+    .slick-list {
+      padding: 0 40% 0 0 !important;
     }
   }
 
@@ -2899,7 +2921,7 @@ body {
 @media screen and (max-width: 450px) {
   .persons {
     .slick-list {
-      padding: 0 10% 0 0 !important;
+      padding: 0 30% 0 0 !important;
     }
 
     &__item {
@@ -3250,11 +3272,55 @@ body {
 }
 
 @media screen and (max-width: 360px) {
+  .navigation {
+    &__list {
+      margin: 10px auto;
+      display: block;
+    }
+    &__item {
+      margin-right: 0px;
+      margin-bottom: 10px;
+    }
+    &__item:last-child {
+      margin-bottom: 0px;
+    }
+
+    &__link {
+      font-size: 15px;
+    }
+  }
+
   .hero {
     .personal-card {
+      top: -130px;
+      clip-path: polygon(16% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
       &::after {
         background: none;
         border: 2px solid #76767630;
+      }
+
+      &__profession {
+        font-size: 15px;
+      }
+
+      .person {
+        &__nikname {
+          font-size: 11px;
+        }
+      }
+
+      .price {
+        &__eth {
+          font-size: 8px;
+        }
+
+        &__dollar {
+          font-size: 9px;
+        }
+      }
+
+      &__button {
+        font-size: 12px;
       }
     }
 
@@ -3268,14 +3334,20 @@ body {
 
     &__personal-card {
       max-width: 100%;
-      display: grid;
-      justify-content: center;
+      padding: 27.64px 15px 17.69px 15px;
+      // display: grid;
+      // justify-content: center;
       clip-path: polygon(26% 0%, 70% 0%, 100% 0, 100% 100%, 0 100%, 0 25%);
     }
     .partners {
       &__list {
         gap: 20px;
       }
+
+      &__item {
+        max-width: 40%;
+      }
+
       img {
         width: 100%;
       }
@@ -3305,28 +3377,37 @@ body {
       font-size: 18px;
     }
   }
+
+  .subscribe {
+    &__image {
+      height: 280px;
+    }
+  }
 }
 
 @media screen and (max-width: 300px) {
-  .navigation {
-    &__list {
-      margin: 10px auto;
-      display: block;
+  .hero {
+    &__personal-card {
+      display: grid;
+      justify-content: center;
     }
-    &__item {
-      margin-right: 0px;
-      margin-bottom: 10px;
+
+    .statistic {
+      &__title {
+        font-size: 15px;
+      }
     }
-    &__item:last-child {
-      margin-bottom: 0px;
+
+    .partners {
+      &__list {
+        // justify-content: center;
+      }
     }
   }
 
-  .hero {
-    .partners {
-      &__list {
-        justify-content: center;
-      }
+  .top {
+    .personal-card {
+      justify-content: center !important;
     }
   }
 
@@ -3377,8 +3458,29 @@ body {
       gap: 10px;
     }
 
+    .section-title {
+      font-size: 20px;
+    }
+
+    &__input {
+      // width: 60%;
+    }
+
     &__button {
+      // padding: 7px 10px;
       margin-left: 0px;
+    }
+  }
+
+  .footer {
+    .accordion {
+      &__item {
+        padding: 10px 0px 0px;
+
+        &:first-child {
+          padding: 0px;
+        }
+      }
     }
   }
 }
