@@ -2232,6 +2232,7 @@ body {
   }
   .persons .slick-list {
     padding: 0 10% 0 0 !important;
+    padding-left: 20px !important;
   }
 }
 @media screen and (max-width: 365px) {
@@ -2309,14 +2310,14 @@ body {
   .hero .partners img {
     width: 100%;
   }
+  .top .slick-list {
+    padding-left: 10px !important;
+  }
   .top .slick-slide {
     margin-right: 20px;
   }
   .top .personal-card {
     padding: 24.87px 6px 18px;
-  }
-  .top__wrap {
-    margin: 180px 0% 0px 7.5%;
   }
   .about .section-title {
     font-size: 18px;

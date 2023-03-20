@@ -3245,6 +3245,7 @@ body {
   .persons {
     .slick-list {
       padding: 0 10% 0 0 !important;
+      padding-left: 20px !important;
     }
   }
 }
@@ -3355,6 +3356,10 @@ body {
   }
 
   .top {
+    .slick-list {
+      padding-left: 10px !important;
+    }
+
     .slick-slide {
       margin-right: 20px;
     }
@@ -3368,7 +3373,7 @@ body {
     }
 
     &__wrap {
-      margin: 180px 0% 0px 7.5%;
+      // margin: 180px 0% 0px 7.5%;
     }
   }
 
