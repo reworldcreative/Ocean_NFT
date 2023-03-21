@@ -1662,6 +1662,7 @@ body {
   &__second-col {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 32.6px;
   }
 
@@ -1818,6 +1819,12 @@ body {
   .persons {
     &__item {
       max-width: 437.76px;
+    }
+  }
+
+  .footer {
+    &__second-col {
+      justify-content: initial;
     }
   }
 }
@@ -2658,6 +2665,16 @@ body {
     &__second {
       border: none;
       padding-top: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .partners {
+    &__item {
+      img {
+        width: 200px;
+      }
     }
   }
 }

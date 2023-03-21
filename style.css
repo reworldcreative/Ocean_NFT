@@ -1186,6 +1186,7 @@ body {
 .footer__second-col {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   gap: 32.6px;
 }
 .footer__item, .footer__item a {
@@ -1306,6 +1307,9 @@ body {
   }
   .persons__item {
     max-width: 437.76px;
+  }
+  .footer__second-col {
+    justify-content: initial;
   }
 }
 @media screen and (max-width: 1590px) {
@@ -1854,6 +1858,11 @@ body {
   .footer__second {
     border: none;
     padding-top: 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .partners__item img {
+    width: 200px;
   }
 }
 @media screen and (max-width: 550px) {
