@@ -1271,8 +1271,10 @@ body {
 }
 .accordion__list {
   list-style: none;
+  display: flex;
 }
 .accordion__item, .accordion__item a {
+  margin-right: 15px;
   cursor: pointer;
   font-family: "Inter";
   font-style: normal;
@@ -1281,6 +1283,9 @@ body {
   line-height: 171%;
   color: #d9dbe1;
   padding: 13px 0px;
+}
+.accordion__item:last-child {
+  margin-right: 0px;
 }
 
 @keyframes logo-rotate {
@@ -1650,6 +1655,12 @@ body {
     margin-right: 0px;
   }
   .collections__item:nth-child(odd) {
+    margin-right: 0px;
+  }
+  .accordion__list {
+    display: block;
+  }
+  .accordion__item, .accordion__item a {
     margin-right: 0px;
   }
 }
