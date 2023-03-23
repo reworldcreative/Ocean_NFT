@@ -1960,6 +1960,12 @@ body {
     }
   }
 
+  .subscribe {
+    &__wrap {
+      margin: 293.63px 13.98% 100px 6.87%;
+    }
+  }
+
   .footer {
     &__wrap {
       margin: 0px 5%;
@@ -2338,7 +2344,12 @@ body {
   .persons .slick-list {
     padding: 0 10% 0 0 !important;
   }
+
   .collections {
+    &__wrap {
+      margin: 108px 9% 0px 6.81%;
+    }
+
     &__image {
       max-width: 270px;
       height: 450px;

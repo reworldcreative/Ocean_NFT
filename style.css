@@ -1401,6 +1401,9 @@ body {
   .top .slick-list {
     padding: 0 20% 0 0 !important;
   }
+  .subscribe__wrap {
+    margin: 293.63px 13.98% 100px 6.87%;
+  }
   .footer__wrap {
     margin: 0px 5%;
   }
@@ -1643,6 +1646,9 @@ body {
 @media screen and (max-width: 900px) {
   .persons .slick-list {
     padding: 0 10% 0 0 !important;
+  }
+  .collections__wrap {
+    margin: 108px 9% 0px 6.81%;
   }
   .collections__image {
     max-width: 270px;
