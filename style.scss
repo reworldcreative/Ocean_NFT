@@ -1838,7 +1838,7 @@ body {
 @media screen and (max-width: 1590px) {
   .top {
     .slick-list {
-      padding: 0 19% 0 0 !important;
+      padding: 0 30% 0 0 !important;
     }
   }
 
@@ -1859,6 +1859,12 @@ body {
 }
 
 @media screen and (max-width: 1550px) {
+  .top {
+    .slick-list {
+      padding: 0 25% 0 0 !important;
+    }
+  }
+
   .footer {
     .last {
       .footer__list {
@@ -1927,6 +1933,12 @@ body {
 }
 
 @media screen and (max-width: 1460px) {
+  .top {
+    .slick-list {
+      padding: 0 25% 0 0 !important;
+    }
+  }
+
   .subscribe {
     &__image {
       margin-right: 45.28px;
@@ -1942,6 +1954,12 @@ body {
 }
 
 @media screen and (max-width: 1406px) {
+  .top {
+    .slick-list {
+      padding: 0 20% 0 0 !important;
+    }
+  }
+
   .footer {
     &__wrap {
       margin: 0px 5%;
@@ -1973,6 +1991,12 @@ body {
 }
 
 @media screen and (max-width: 1350px) {
+  .top {
+    .slick-list {
+      padding: 0 15% 0 0 !important;
+    }
+  }
+
   .hero {
     &__wrap {
       > div:first-child {
@@ -2311,6 +2335,9 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+  .persons .slick-list {
+    padding: 0 10% 0 0 !important;
+  }
   .collections {
     &__image {
       max-width: 270px;
@@ -2372,12 +2399,6 @@ body {
     }
   }
 
-  .persons {
-    .slick-list {
-      padding: 0 40% 0 0 !important;
-    }
-  }
-
   .hero {
     &__wrap {
       max-width: 100%;
@@ -2401,8 +2422,15 @@ body {
   }
 
   .top {
+    // &__wrap {
+    //   margin: 166px 0% 0px 7.5%;
+    // }
+
     &__wrap {
-      margin: 166px 0% 0px 7.5%;
+      margin: 166px 0% 0px 0%;
+    }
+    .section-top {
+      margin-left: 5%;
     }
     .personal-card {
       &__profession {
@@ -2420,8 +2448,19 @@ body {
   }
 
   .persons {
+    // &__wrap {
+    //   margin: 108px 0px 0px 30px;
+    // }
+
+    .slick-list {
+      padding: 0 55% 0 0 !important;
+    }
+
     &__wrap {
-      margin: 108px 0px 0px 30px;
+      margin: 70px 0px 0px 0px;
+    }
+    .section-top {
+      margin-left: 30px;
     }
 
     .person {
@@ -2577,9 +2616,9 @@ body {
   }
 
   .persons {
-    &__wrap {
-      margin: 70px 0px 0px 30px;
-    }
+    // &__wrap {
+    //   margin: 70px 0px 0px 30px;
+    // }
   }
 
   .collections {
@@ -2626,15 +2665,23 @@ body {
   }
 }
 
-@media screen and (max-width: 700px) {
-  .top {
-    &__wrap {
-      margin: 166px 0% 0px 0%;
-    }
-    .section-top {
-      margin-left: 5%;
+@media screen and (max-width: 720px) {
+  .persons {
+    .slick-list {
+      padding: 0 45% 0 0 !important;
     }
   }
+}
+
+@media screen and (max-width: 700px) {
+  // .top {
+  //   &__wrap {
+  //     margin: 166px 0% 0px 0%;
+  //   }
+  //   .section-top {
+  //     margin-left: 5%;
+  //   }
+  // }
 
   .sellers {
     &__item:nth-child(n + 5) {
@@ -2643,11 +2690,15 @@ body {
   }
 
   .persons {
-    &__wrap {
-      margin: 70px 0px 0px 0px;
-    }
-    .section-top {
-      margin-left: 30px;
+    // &__wrap {
+    //   margin: 70px 0px 0px 0px;
+    // }
+    // .section-top {
+    //   margin-left: 30px;
+    // }
+
+    .slick-list {
+      padding: 0 40% 0 0 !important;
     }
   }
 }
